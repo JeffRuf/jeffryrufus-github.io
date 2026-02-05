@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NMPC Torque Vectoring | Jeffry Rufus Robert Williams</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="top">
+      <div class="wrap nav">
+        <a class="brand" href="index.html#projects">
+          <span class="brand-dot"></span>
+          <span class="brand-text">Back to Projects</span>
+        </a>
+        <nav class="nav-links">
+          <a href="index.html#about">About</a>
+          <a href="index.html#experience">Experience</a>
+          <a class="btn" href="index.html#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2>4WD Torque Vectoring using NMPC (MATLAB/Simulink)</h2>
+          <p class="small-muted">Vehicle Dynamics • Nonlinear MPC • Constraints • Simulation Validation</p>
+        </div>
+
+        <div class="card reveal">
+          <h3>Abstract</h3>
+          <p>
+            This project designs and validates a Nonlinear Model Predictive Controller (NMPC) for four-wheel torque vectoring in an electric vehicle
+            with independently controlled wheel motors. A control-oriented nonlinear vehicle model predicts future motion and computes wheel torque
+            commands that improve stability and path tracking while respecting actuator constraints (torque limits and torque-rate limits).
+            The controller is implemented in MATLAB/Simulink and evaluated on high lateral-load trajectories to compare performance against a
+            non-vectoring baseline.
+          </p>
+        </div>
+
+        <div class="two-col" style="margin-top:14px;">
+          <div class="card reveal">
+            <h3>Physics & Control Intuition</h3>
+            <p>
+              Differential wheel torque generates a net yaw moment. Under high lateral acceleration, a baseline vehicle may understeer due to limited
+              lateral tire force and yaw response. NMPC uses prediction to select a feasible torque sequence that improves yaw behavior and tracking
+              without violating actuator limits or causing unstable oscillations.
+            </p>
+            <div class="tags">
+              <span>Yaw Moment</span><span>Tire Forces</span><span>Constraints</span><span>Optimization</span>
+            </div>
+          </div>
+
+          <div class="card reveal">
+            <h3>What I Validated</h3>
+            <ul class="focus">
+              <li>Trajectory tracking error (position RMSE) vs baseline</li>
+              <li>Yaw rate response and heading tracking</li>
+              <li>Torque split behavior (left vs right) during cornering</li>
+              <li>Constraint activity: torque magnitude + torque slew rate</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Fancy Artifacts -->
+        <div class="card reveal" style="margin-top:14px;">
+          <h3>Artifacts</h3>
+          <p class="small-muted">
+            Add your PDF/video/images by uploading them into Replit and updating the paths below.
+          </p>
+
+          <div class="artifact-links">
+            <a class="btn small" href="https://drive.google.com/file/d/11j8LgCE_9Q7pgZ43GHyXh2iherYZz5ON/view?usp=sharing" target="_blank">📄 Project Report</a>
+            <a class="btn small" href="https://drive.google.com/drive/folders/1V46ZFBlZwu56D7m1Q77BsJm_qsGl9ctB?usp=sharing" target="Google_Drive">💻 Source Code</a>
+            <a class="btn small" href="https://drive.google.com/drive/folders/1iKCKYZw0ReSjoQ6dGmCdeVRy12w2Sn_s?usp=sharing" target="Google_Drive">💻 Plots</a>
+          </div>
+
+         
+
+          <!-- Code: paste any sample code here -->
+    
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

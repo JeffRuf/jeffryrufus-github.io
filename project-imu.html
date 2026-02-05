@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IMU Orientation Estimation | Jeffry Williams</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="top">
+    <div class="wrap nav">
+      <a class="brand" href="index.html#projects"><span class="brand-dot"></span><span class="brand-text">Back to
+          Projects</span></a>
+      <nav class="nav-links">
+        <a href="index.html#about">About</a>
+        <a href="index.html#experience">Experience</a>
+        <a class="btn" href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <h2>IMU Orientation Estimation with Adaptive Complementary Filtering</h2>
+        <p class="small-muted">Sensor Fusion • IMU • Bias/Drift • Adaptive Filtering</p>
+      </div>
+
+      <div class="card reveal">
+        <h3>Abstract</h3>
+        <p>
+          This project builds an orientation estimation pipeline using a 6-axis IMU (MPU6050-class) to compute roll,
+          pitch, and yaw.
+          The gyroscope is integrated to capture fast rotational motion, while accelerometer-based tilt provides a
+          low-frequency reference.
+          A complementary filter blends both sources to reduce noise and long-term drift. The pipeline is extended with
+          (1) drift-rate quantification,
+          (2) temperature-dependent bias characterization, (3) adaptive filter weighting based on motion intensity, and
+          (4) online gyro bias estimation.
+        </p>
+      </div>
+
+      <div class="two-col" style="margin-top:14px;">
+        <div class="card reveal">
+          <h3>Physics & Why it Works</h3>
+          <p>
+            Gyros measure angular rate and must be integrated → small bias accumulates into drift. Accelerometers
+            measure specific force;
+            when motion is mild, gravity dominates and provides a stable tilt reference. The complementary filter
+            combines high-pass gyro behavior
+            with low-pass accelerometer tilt to produce stable orientation.
+          </p>
+          <div class="tags">
+            <span>Drift</span><span>Bias</span><span>Gravity Reference</span><span>Filtering</span>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <h3>Method</h3>
+          <ul class="focus">
+            <li>Integrate gyro to estimate angles and compute drift rate (deg/s) under stationary conditions</li>
+            <li>Compute roll/pitch from accelerometer tilt equations and compare to gyro integration</li>
+            <li>Run cold/room/warm datasets to quantify temperature-induced bias effects</li>
+            <li>Adaptive complementary filter: change α based on motion intensity</li>
+            <li>Online bias estimation: update gyro bias while stationary / low-motion</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card reveal" style="margin-top:14px;">
+        <h3>Results & Validation (what to show)</h3>
+        <p>
+          Recommended plots: gyro-integrated angles vs accel tilt, drift rate per axis, effect of temperature on bias
+          and drift,
+          adaptive α behavior during motion, and final fused orientation stability.
+        </p>
+      </div>
+
+      <div class="card reveal" style="margin-top:14px;">
+        <h3>Artifacts</h3>
+        <div class="tags">
+          <span>🖼️ Images/Plots: <a href="https://drive.google.com/drive/folders/1TKiXo-OCD2XROJffGrzPTqY0MXs9fsWQ?usp=sharing" target="_blank">Images/Plots</a></span>
+          <span>💻 Code: <a href="https://drive.google.com/drive/folders/1MGq4MIb_j0Ddm8QcqTgt_7OqSHVS7QW1?usp=sharing" target="_blank">Code</a></span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

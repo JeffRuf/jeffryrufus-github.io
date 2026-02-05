@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MARL Foraging | Jeffry Williams</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="top">
+      <div class="wrap nav">
+        <a class="brand" href="index.html#projects"><span class="brand-dot"></span><span class="brand-text">Back to Projects</span></a>
+        <nav class="nav-links">
+          <a href="index.html#about">About</a>
+          <a href="index.html#experience">Experience</a>
+          <a class="btn" href="index.html#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2>Multi-Agent RL — Level-Based Foraging with Obstacles</h2>
+          <p class="small-muted">CTDE • MAPPO • Cooperation • Partial Observability</p>
+        </div>
+
+        <div class="card reveal">
+          <h3>Abstract</h3>
+          <p>
+            This project studies cooperative multi-agent reinforcement learning in an obstacle-augmented Level-Based Foraging environment.
+            Agents learn to coordinate under partial observability and spatial constraints using MAPPO under a centralized-training,
+            decentralized-execution framework. Experiments vary field-of-view, obstacle density, and agent levels to evaluate learning stability
+            and cooperation under bottlenecks.
+          </p>
+        </div>
+
+        <div class="two-col" style="margin-top:14px;">
+          <div class="card reveal">
+            <h3>Why it relates to robotics/autonomy</h3>
+            <p>
+              Multi-robot teams face occlusion, limited sensing, and shared resources. CTDE methods are useful because training can use global state,
+              while deployment uses only local observations.
+            </p>
+            <div class="tags">
+              <span>Coordination</span><span>Robust Learning</span><span>Partial Observability</span>
+            </div>
+          </div>
+
+          <div class="card reveal">
+            <h3>Artifacts</h3>
+            <div class="tags">
+              <span>📄 Report: <a href="https://drive.google.com/file/d/1Bh6G6x36ugG9yH5OMaOZrQYGxvXDqWIj/view?usp=sharing" target="Plots">Report</a></span>
+              <span>🖼️ LearningCurve/Plot: <a href="https://drive.google.com/drive/folders/10wATwk_adVZo68a--nMd6H-lMeugyrUt?usp=sharing" target="Plots">Plots</a></span>
+              <span>🖼️ Source Code: <a href="https://drive.google.com/drive/folders/1qs1Mj60zN42MU-1SyEoZ-Doh6GQ1DotX?usp=sharing" target="Source Code">Source Code</a></span>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

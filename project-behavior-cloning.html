@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Behavior Cloning | Jeffry Rufus Robert Williams</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="top">
+      <div class="wrap nav">
+        <a class="brand" href="index.html#projects">
+          <span class="brand-dot"></span>
+          <span class="brand-text">Back to Projects</span>
+        </a>
+        <nav class="nav-links">
+          <a href="index.html#about">About</a>
+          <a href="index.html#experience">Experience</a>
+          <a class="btn" href="index.html#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2>Behavior Cloning for Autonomous Driving</h2>
+          <p class="small-muted">Imitation Learning • CNN Regression • Simulator Data • Closed-loop Validation</p>
+        </div>
+
+        <div class="card reveal">
+          <h3>Abstract</h3>
+          <p>
+            This project implements a behavior cloning pipeline for autonomous driving using supervised learning.
+            Driving demonstrations are used to train a model that predicts steering (and optionally throttle/brake) from camera images.
+            The workflow includes dataset balancing to reduce straight-driving bias, augmentation to improve generalization, and closed-loop
+            simulator evaluation to verify stability and recovery behavior.
+          </p>
+        </div>
+
+        <div class="two-col" style="margin-top:14px;">
+          <div class="card reveal">
+            <h3>Method</h3>
+            <ul class="focus">
+              <li>Collect synchronized (image, steering, throttle, brake) samples</li>
+              <li>Preprocess: crop/resize/normalize and remove irrelevant regions</li>
+              <li>Balance steering distribution + augment (brightness/shift/flip with sign fix)</li>
+              <li>Train CNN regression model; validate generalization to unseen segments</li>
+              <li>Closed-loop testing: evaluate lane keeping + smoothness + recovery</li>
+            </ul>
+          </div>
+
+          <div class="card reveal">
+            <h3>Engineering Notes</h3>
+            <p>
+              Behavior cloning is sensitive to compounding error: small prediction mistakes accumulate over time.
+              That’s why balancing and augmentation matter—your dataset must include recovery examples and diverse conditions.
+            </p>
+            <div class="tags">
+              <span>Data Bias</span><span>Generalization</span><span>Closed-loop</span><span>Stability</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card reveal" style="margin-top:14px;">
+          <h3>Artifacts</h3>
+          <p class="small-muted">Upload your plots/screenshots into <b>images/projects/</b> and update file names.</p>
+
+          <div class="artifact-links">
+            <a class="btn small" href="https://youtube.com/yourvideo" target="_blank">🎥 Demo Video</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
