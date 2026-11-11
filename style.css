@@ -224,3 +224,19 @@ figure{margin:0}
 .results span{display:block;font:600 11.5px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--maroon);margin-bottom:2px}
 .results b{color:var(--ink)}
 @media (max-width:960px){.about{margin-left:0}}
+
+/* employer row */
+.orgs{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:0 0 48px}
+.org-tile{display:flex;flex-direction:column;gap:3px;background:#fff;border:1px solid var(--line);border-top:3px solid var(--maroon);padding:22px 20px;text-decoration:none;transition:border-color .15s,transform .15s}
+.org-tile:hover{transform:translateY(-2px);border-color:var(--ink-2);border-top-color:var(--maroon)}
+.org-tile b{font-size:17px;margin-top:12px}
+.org-tile span{font-size:14.5px;color:var(--ink-2)}
+.org-tile .when{font:500 12.5px/1.5 var(--mono);color:var(--steel);margin-top:6px}
+.mono-mark{display:grid;place-items:center;width:52px;height:52px;border-radius:50%;background:var(--maroon);color:#fff!important;font:600 13px var(--mono)!important;letter-spacing:.06em}
+.job-photos{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:6px}
+.job-photos img{width:100%;aspect-ratio:4/3;object-fit:cover;border:1px solid var(--line)}
+.job-photos figcaption{font-size:13px;color:var(--steel);margin-top:6px}
+.edu + .edu{margin-top:0}
+.edu a{color:var(--maroon)}
+@media (max-width:960px){.orgs{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:640px){.orgs{grid-template-columns:1fr}.job-photos{grid-template-columns:1fr 1fr}}
