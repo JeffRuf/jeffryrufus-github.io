@@ -1,64 +1,22 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>DCPM Motor Modeling | Jeffry Williams</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header class="top">
-      <div class="wrap nav">
-        <a class="brand" href="index.html#projects"><span class="brand-dot"></span><span class="brand-text">Back to Projects</span></a>
-        <nav class="nav-links">
-          <a href="index.html#about">About</a>
-          <a href="index.html#experience">Experience</a>
-          <a class="btn" href="index.html#contact">Contact</a>
-        </nav>
-      </div>
-    </header>
-
-    <main class="section">
-      <div class="wrap">
-        <div class="section-head reveal">
-          <h2>DC Permanent Magnet Motor Modeling + DOE + Optimization</h2>
-          <p class="small-muted">Electromechanical Dynamics • DOE/RSM • Uncertainty • Optimization</p>
-        </div>
-
-        <div class="card reveal">
-          <h3>Abstract</h3>
-          <p>
-            Built an electromechanical motor model from fundamental electrical and mechanical dynamics, validated it in simulation under varying loads,
-            studied PWM effects on steady-state behavior, and applied DOE/RSM plus Monte-Carlo analysis to quantify manufacturing tolerance impact.
-            An optimization step reduces output variability while balancing cost.
-          </p>
-        </div>
-
-        <div class="two-col" style="margin-top:14px;">
-          <div class="card reveal">
-            <h3>Physics basis</h3>
-            <p>
-              Armature circuit dynamics coupled with torque balance predict speed/current response. PWM changes the effective average voltage,
-              influencing speed, current, and efficiency under load.
-            </p>
-            <div class="tags">
-              <span>Electromechanics</span><span>PWM</span><span>Uncertainty</span>
-            </div>
-          </div>
-
-          <div class="card reveal">
-            <h3>Artifacts</h3>
-            <div class="tags">
-              <span>📄Report:<a href="https://drive.google.com/drive/folders/1FhWZB9mWISMLVZPEctBpiHRyrLYP6GOF?usp=sharing" target="Report"> Report</a></span></span>
-              
-              <span>🖼️ Plots/Screenshots:<a href="https://drive.google.com/drive/folders/1CeaGJneuiLudlhTMvnb5vMm8hheGDsYX?usp=sharing" target="Plots"> Plots</a></span></span>
-              
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-
-    <script src="script.js"></script>
-  </body>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DC motor modeling, DOE and tolerance study | Jeffry Rufus Robert Williams</title>
+<meta name="description" content="I built a DC permanent-magnet motor model from its electrical and mechanical equations, checked it in Simulink under different loads, and looked at ho">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top"><div class="wrap nav">
+  <a class="brand" href="index.html">Jeffry Rufus Robert Williams</a>
+  <nav class="nav-links">
+    <a href="index.html#work">Work</a><a href="index.html#experience">Experience</a>
+    <a href="index.html#projects">Projects</a><a href="index.html#skills">Skills</a><a href="index.html#contact">Contact</a>
+  </nav>
+</div></header>
+<main class="wrap">
+<div class="page-head"><a class="back" href="index.html#work">← Back to all work</a><p class="eyebrow">Course project · MATLAB/Simulink · Statistics</p><h1>DC motor modeling, DOE and tolerance study</h1><p class="lead">I built a DC permanent-magnet motor model from its electrical and mechanical equations, checked it in Simulink under different loads, and looked at how PWM changes speed, current and efficiency.</p><div class="links"><a class="btn ghost" href="https://drive.google.com/drive/folders/1FhWZB9mWISMLVZPEctBpiHRyrLYP6GOF?usp=sharing" target="_blank" rel="noreferrer">Report</a></div></div><div class="block"><h2>Analysis</h2><ul class="points"><li>Used DOE and response-surface methods to find which motor parameters matter most.</li><li>Ran a Monte Carlo study to see how manufacturing tolerances spread the output, then optimized to reduce that spread at reasonable cost.</li></ul></div></main>
+<footer><div class="wrap">Jeffry Rufus Robert Williams · College Station, TX · <a href="mailto:jeffruf2001@gmail.com">jeffruf2001@gmail.com</a></div></footer>
+</body>
 </html>

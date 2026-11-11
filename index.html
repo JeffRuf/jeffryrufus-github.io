@@ -1,525 +1,121 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Jeffry Rufus Robert Williams | Controls • Robotics • Autonomous Vehicles</title>
-    <meta
-      name="description"
-      content="Controls, Robotics, and Autonomous Vehicles portfolio — ROS2, Gazebo, CARLA, MATLAB/Simulink, Motor Control, Sensors, LiDAR, Embedded Systems."
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jeffry Rufus Robert Williams | Mechanical &amp; Robotics Engineer</title>
+<meta name="description" content="Mechanical and robotics engineer: autonomous EV conversion, rebar-tying robot, die-cast and molded EV enclosures.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top"><div class="wrap nav">
+  <a class="brand" href="index.html">Jeffry Rufus Robert Williams</a>
+  <nav class="nav-links">
+    <a href="index.html#work">Work</a><a href="index.html#experience">Experience</a>
+    <a href="index.html#projects">Projects</a><a href="index.html#skills">Skills</a><a href="index.html#contact">Contact</a>
+  </nav>
+</div></header>
+<main class="wrap">
+<div class="hero">
+  <div>
+    <p class="eyebrow">Mechanical engineer · Hardware design and integration · Robotics</p>
+    <h1>Hi, I'm Jeffry.</h1>
+    <p class="lead">I love turning designs on a CAD screen into systems that work in the real world. I ask why on every part
+    of a design, I look for the simplest version that still does the job, and I build and test what I design.</p>
+    <p class="lead" style="font-size:17px">Master's student at Texas A&amp;M, graduating December 2026, and open to full-time roles.</p>
+    <div class="btns"><a class="btn" href="#work">See my work</a><a class="btn ghost" href="#contact">Contact me</a>
+    <a class="btn ghost" href="https://www.linkedin.com/in/jeffryrwilliams/" target="_blank" rel="noreferrer">LinkedIn</a></div>
+  </div>
+  <figure class="hero-photo"><img src="img-atv-me-working.jpg" alt="Jeffry working on the autonomous vehicle">
+  <figcaption>Working on the steering hardware of our autonomous vehicle</figcaption></figure>
+</div>
+<div class="stats">
+  <div class="stat"><b>0.35°</b><span>steering angle resolution from my geared encoder drive</span></div>
+  <div class="stat"><b>25%</b><span>lighter robot chassis at Arn Autonomy</span></div>
+  <div class="stat"><b>15%</b><span>lighter die-cast EV charger enclosure</span></div>
+  <div class="stat"><b>&lt;5 mm</b><span>robot tool repeatability over 100+ runs</span></div>
+</div>
 
-  <body>
-    <!-- Sticky Top Nav -->
-    <header class="top">
-      <div class="wrap nav">
-        <a class="brand" href="#top" aria-label="Home">
-          <span class="brand-dot"></span>
-          <span class="brand-text">Jeffry Rufus Robert Williams</span>
-        </a>
+<section id="work">
+  <h2>Main work</h2>
+  <p class="section-intro">Three projects where I owned the hardware from the first sketch to a tested part.</p>
 
-        <nav class="nav-links" aria-label="Primary">
-          <a href="#about">About</a>
-          <a href="#experience">Experience</a>
-          <a href="#projects">Projects</a>
-          <a class="btn" href="#contact">Contact</a>
-        </nav>
-      </div>
-    </header>
+  <div class="feature">
+    <a class="feature-img" href="project-atv.html"><img src="img-enc-onvehicle.jpg" alt="Encoder drive on the EPS"></a>
+    <div>
+      <p class="eyebrow">Thesis · Texas A&amp;M · 2024 to now</p>
+      <h3><a href="project-atv.html">Turning an electric vehicle into an autonomous test vehicle</a></h3>
+      <ul class="points"><li>Designed a 4:1 geared encoder drive that reads the steering angle at 0.35° without modifying the column.</li><li>Built a board and enclosure that let a computer command the stock power steering. It tracks within 1.02° RMS on the ground.</li><li>Designed a fan-cooled LiDAR mount, a vibration-isolated camera mount and sheet-metal motor-controller mounts, all bolt-on.</li></ul>
+      <a class="more" href="project-atv.html">See the full build, with photos and videos →</a>
+    </div>
+  </div>
 
-    <!-- Hero -->
-    <main id="top" class="hero">
-      <div class="wrap hero-grid">
-        <section class="hero-copy reveal">
-          <p class="kicker">CONTROLS • ROBOTICS • AUTONOMOUS VEHICLES</p>
-          <h1>Jeffry Rufus Robert <span class="accent">Williams</span></h1>
+  <div class="feature">
+    <div class="feature-wide">
+      <p class="eyebrow">Arn Autonomy · San Francisco · Summer 2025</p>
+      <h3><a href="project-rebar.html">Rebar-tying robot</a></h3>
+      <ul class="points"><li>Designed a 427 × 427 mm gantry chassis in SolidWorks from the rebar grid spacing and tool loads.</li><li>Right-sized it from 4045 to 2020 extrusions after hand calcs showed stiffness was the limit: 25% lighter, deflection under 0.5 mm.</li><li>Built the prototype and reached sub-5 mm tool repeatability over 100+ runs.</li></ul>
+      <a class="more" href="project-rebar.html">Read more →</a>
+      <p class="note">The robot is still in development at the company, so I can't share photos.</p>
+    </div>
+  </div>
 
-          <p class="lead">
-            I build control-oriented robotics and autonomous-vehicle workflows—combining simulation (CARLA / Gazebo / Simulink),
-            embedded implementation (Arduino / FreeRTOS / Linux), and real-world sensing (IMU, LiDAR, depth camera).
-          </p>
+  <div class="feature">
+    <div class="feature-wide">
+      <p class="eyebrow">CREAT UNO Minda · Pune · 2023 to 2024</p>
+      <h3><a href="project-enclosures.html">EV enclosures for Tata Motors</a></h3>
+      <ul class="points"><li>Cut a die-cast aluminum charger enclosure's mass by 15% while protecting the sealing flange and mounts.</li><li>Cut a PC/ABS wireless charger housing's mass by 9% from the tooling supplier's DFM feedback.</li><li>Designed test rigs that standardized Reverse Park Assist testing across 3 prototype vehicles.</li></ul>
+      <a class="more" href="project-enclosures.html">Read more →</a>
+      <p class="note">These are company products, so I can't share photos.</p>
+    </div>
+  </div>
+</section>
 
-          <div class="hero-cta">
-            <a class="btn" href="#projects">Explore Projects</a>
-            <!-- Replace with your real LinkedIn URL -->
-            <a class="btn ghost" href="https://www.linkedin.com/in/jeffryrwilliams/" target="_blank" rel="noreferrer">LinkedIn</a>
-          </div>
+<section id="experience">
+  <h2>Experience</h2>
+  <div class="job"><div class="job-head"><h3>Mechanical Graduate Researcher</h3><span class="when">Aug 2024 to present</span></div><p class="meta">Autonomous Vehicles Lab, Texas A&amp;M University</p><ul class="points"><li>Lowered LiDAR temperature from 65°C to 57°C and mount weight 18% with a ventilated, fan-cooled mount design</li><li>Reduced lane-detection failures in vehicle testing by designing a vibration-isolated camera mount</li><li>Fabricated waterjet-cut sheet-metal mounts for four 96V hub-motor controllers and planned the harness routing</li><li>Measured steering angle at 0.35° resolution over 540° by designing and assembling a 4:1 gear-driven encoder assembly</li><li>Packaged the steering electronics into a frame-mounted enclosure with a removable cover for serviceability</li><li>Validated an 8-state MPC with zero collisions in CARLA obstacle tests, backed by an emergency-braking supervisor</li></ul></div>
+  <div class="job"><div class="job-head"><h3>Mechanical &amp; Robotics Engineering Intern</h3><span class="when">May 2025 to Aug 2025</span></div><p class="meta">Arn Autonomy (formerly Spacer Robotics) · San Francisco, CA</p><ul class="points"><li>Designed a 427 × 427 mm gantry chassis for a rebar-tying robot in SolidWorks, sized from the rebar grid spacing and tool loads, with 2020 aluminum extrusions, drivetrain mounts and a guide-rail-stabilized linear actuator</li><li>Trimmed robot mass 25% by right-sizing from 4045 to 2020 extrusions and doubling only the guide-rail members, keeping beam deflection under 0.5 mm and a safety factor above 2 under a 2× dynamic load</li><li>Simplified assembly to one fastener size and standard extrusion hardware, with gusset plates to resist frame racking</li><li>Created the BOM, built the prototype and validated sub-5 mm tool repeatability over 100+ runs by pairing 30 Hz visual servoing with a 200 Hz PID loop</li></ul></div>
+  <div class="job"><div class="job-head"><h3>Mechanical Engineer, EV Division</h3><span class="when">Jan 2023 to Mar 2024</span></div><p class="meta">CREAT UNO Minda · Pune, India</p><ul class="points"><li>Reduced a die-cast aluminum charger enclosure's mass by 15% for Tata EV platforms by thinning walls in CATIA V6 while protecting the sealing flange and mounting features through DFMEA and stack-up checks</li><li>Cut a PC/ABS wireless charger housing's mass by 9% (about 2 metric tons of resin per 100K units) by reworking wall thickness, ribs and draft from the tooling supplier's DFM feedback</li><li>Presented enclosure revisions in design reviews with CAE, tooling and quality teams, and updated the DFMEA with actions for the failure modes they raised</li><li>Standardized Reverse Park Assist System (RPAS) testing across 3 prototype vehicles by designing and fabricating vehicle-mounted rigs that held ultrasonic and ToF sensors at design-intent spacing and angles</li></ul></div>
+  <div class="job"><div class="job-head"><h3>Graduate Teaching Assistant, Advanced Control Systems</h3><span class="when">Aug 2024 to present</span></div><p class="meta">Texas A&amp;M University</p><ul class="points"><li>Built a dual-loop motor thermal controller and taught it with PID and FreeRTOS labs to 150+ students</li></ul></div>
+  <div class="job"><div class="job-head"><h3>Mechanical CAD Intern</h3><span class="when">May 2021 to Jul 2021</span></div><p class="meta">CADDESK · Bengaluru, India</p><ul class="points"><li>Modeled 3 assemblies from 50+ parts in Siemens NX by converting 2D drawings into parametric 3D models</li></ul></div>
+  <p class="meta" style="margin-top:14px"><b>Education:</b> M.S. Engineering Technology (Mechanical), Texas A&amp;M University, GPA 3.83, Dec 2026 ·
+  B.E. Automotive Engineering, Anna University, GPA 3.78</p>
+</section>
 
-          <div class="chip-row" aria-label="Key technologies">
-            <span class="chip">ROS2</span>
-            <span class="chip">Gazebo</span>
-            <span class="chip">CARLA</span>
-            <span class="chip">MATLAB/Simulink</span>
-            <span class="chip">Motor Control</span>
-            <span class="chip">MPC / NMPC</span>
-            <span class="chip">FreeRTOS</span>
-            <span class="chip">Linux</span>
-            <span class="chip">CAN</span>
-            <span class="chip">Python</span>
-            <span class="chip">C/C++</span>
-          </div>
-        </section>
+<section id="projects">
+  <h2>More projects</h2>
+  <p class="section-intro">Analysis, controls and sensing projects from my coursework and thesis.</p>
+  <div class="cards">
+    <article class="card"><a class="thumb" href="project-playground.html"><img src="img-pg-seesaw-fea.jpg" alt="Playground equipment and trailer hitch in ANSYS" loading="lazy"></a><h3><a href="project-playground.html">Playground equipment and trailer hitch in ANSYS</a></h3><p class="meta">ANSYS · SolidWorks</p><p>Four playground structures optimized to a factor of safety of 4 to 10, plus a trailer hitch checked with a mesh convergence study.</p><a class="more" href="project-playground.html">Read more →</a></article>
+    <article class="card"><a class="thumb" href="project-carla-mpc.html"><img src="img-carla-mpc.jpg" alt="Lane keeping and overtaking with MPC" loading="lazy"></a><h3><a href="project-carla-mpc.html">Lane keeping and overtaking with MPC</a></h3><p class="meta">Python · acados · CARLA</p><p>My thesis controllers: 6 overtakes on a 40 m obstacle course with zero collisions.</p><a class="more" href="project-carla-mpc.html">Read more →</a></article>
+    <article class="card"><h3><a href="project-nmpc-tv.html">Torque vectoring with nonlinear MPC</a></h3><p class="meta">MATLAB/Simulink</p><p>Four wheel torques chosen every 20 ms. About 60% less path-tracking error than an equal torque split in hard corners.</p><a class="more" href="project-nmpc-tv.html">Read more →</a></article>
+    <article class="card"><a class="thumb" href="project-imu.html"><img src="img-imu-methods.png" alt="IMU orientation with an adaptive filter" loading="lazy"></a><h3><a href="project-imu.html">IMU orientation with an adaptive filter</a></h3><p class="meta">MATLAB</p><p>Blended gyro and accelerometer, tracked gyro bias across temperature, and adapted the blend to motion.</p><a class="more" href="project-imu.html">Read more →</a></article>
+    <article class="card"><a class="thumb" href="project-obstacle-detect.html"><img src="img-obstacle-setup.jpg" alt="Obstacle localization with ultrasonic and ToF" loading="lazy"></a><h3><a href="project-obstacle-detect.html">Obstacle localization with ultrasonic and ToF</a></h3><p class="meta">Sensors · Embedded</p><p>Turning range readings from known sensor positions into obstacle coordinates.</p><a class="more" href="project-obstacle-detect.html">Read more →</a></article>
+    <article class="card"><h3><a href="project-dcpm.html">DC motor modeling, DOE and tolerance study</a></h3><p class="meta">MATLAB/Simulink</p><p>Motor model from first principles, then DOE and Monte Carlo to control output spread.</p><a class="more" href="project-dcpm.html">Read more →</a></article>
+    <article class="card"><h3><a href="project-biopsy-vibration.html">Biopsy robot needle vibration</a></h3><p class="meta">Statistics · Dynamics</p><p>Regression and ANOVA showed translational speed drives vibration most.</p><a class="more" href="project-biopsy-vibration.html">Read more →</a></article>
+    <article class="card"><a class="thumb" href="project-marl-lbf.html"><img src="img-marl-cooperation.png" alt="Multi-robot cooperation with RL" loading="lazy"></a><h3><a href="project-marl-lbf.html">Multi-robot cooperation with RL</a></h3><p class="meta">Python · MAPPO</p><p>How obstacles change cooperation between learning agents.</p><a class="more" href="project-marl-lbf.html">Read more →</a></article>
+    <article class="card"><h3><a href="project-ros-nav.html">ROS navigation and teleoperation</a></h3><p class="meta">ROS · Raspberry Pi</p><p>LiDAR mapping, RViz and goal-driven navigation on a small robot.</p><a class="more" href="project-ros-nav.html">Read more →</a></article>
+  </div>
+</section>
 
-        <aside class="hero-card reveal">
-          <div class="hero-card-top">
-            <div class="status">
-              <span class="pulse"></span>
-              <span>Open to Summer 2026 Internships</span>
-            </div>
-            <h2>Focus Areas</h2>
-          </div>
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="cards">
+    <div class="card"><h3>CAD and drawings</h3><div class="tags"><span>SolidWorks</span><span>Siemens NX</span><span>Creo</span><span>CATIA V6</span><span>GD&amp;T (ASME Y14.5)</span><span>Tolerance stack-ups</span></div></div>
+    <div class="card"><h3>Design and analysis</h3><div class="tags"><span>DFM / DFA</span><span>DFMEA</span><span>Design reviews</span><span>ANSYS FEA</span><span>Hand calculations</span><span>Material selection</span></div></div>
+    <div class="card"><h3>Manufacturing methods</h3><div class="tags"><span>Die casting</span><span>Injection molding</span><span>Sheet metal</span><span>Extrusion framing</span><span>Waterjet</span><span>3D printing</span></div></div>
+    <div class="card"><h3>Build and test</h3><div class="tags"><span>Fixtures and tooling</span><span>Assembly</span><span>BOM</span><span>Troubleshooting</span><span>Multimeter</span><span>Oscilloscope</span><span>Root cause analysis</span></div></div>
+    <div class="card"><h3>Robotics and programming</h3><div class="tags"><span>PID</span><span>MPC / NMPC</span><span>ROS 2</span><span>Gazebo</span><span>EKF</span><span>CAN</span><span>Teensy</span><span>Python</span><span>C/C++</span><span>MATLAB</span></div></div>
+  </div>
+</section>
 
-          <ul class="focus">
-            <li><b>Control Systems:</b> PID/PI/P, tuning, nonlinear & multivariable control, dynamic modeling</li>
-            <li><b>Autonomous Vehicles:</b> vehicle dynamics, sensor fusion, simulation-driven validation</li>
-            <li><b>Robotics:</b> kinematics, SLAM/navigation workflows, perception pipelines</li>
-            <li><b>Embedded:</b> FreeRTOS, motor drivers, CAN/SPI/UART/I2C, PCB bring-up & testing</li>
-          </ul>
-
-          <div class="hero-card-bottom">
-            <a class="mini" href="#contact">Email & Phone ↓</a>
-            <div class="small-muted">College Station, TX</div>
-          </div>
-        </aside>
-      </div>
-
-      <!-- Rotating Tech Visual Strip -->
-      <div class="visual-strip" aria-hidden="true">
-        <div class="overlay-label">Robotics • Autonomy • Simulation • Sensors</div>
-      </div>
-    </main>
-
-    <!-- About -->
-    <section id="about" class="section">
-      <div class="wrap">
-        <div class="section-head reveal">
-          <h2>About</h2>
-          <p>
-            I’m a controls-and-systems focused engineer working across embedded platforms, simulation environments, and vehicle/robot
-            test workflows. I like building systems that are <b>measurable</b>, <b>repeatable</b>, and <b>physically correct</b>—not just demo-ready.
-          </p>
-        </div>
-
-        <div class="two-col">
-          <div class="card reveal">
-            <h3>What I’m building toward</h3>
-            <p>
-              Robust autonomy stacks: control-oriented models + sensor fusion + repeatable validation in simulation and on hardware.
-              I’m especially interested in the bridge between dynamic modeling and embedded implementation.
-            </p>
-            <div class="tags">
-              <span>Vehicle Dynamics</span>
-              <span>Dynamic Modeling</span>
-              <span>Sensor Fusion</span>
-              <span>Simulation</span>
-              <span>Mechatronics</span>
-            </div>
-          </div>
-
-          <div class="card reveal">
-            <h3>Toolbox (high-level)</h3>
-            <p class="small-muted">
-              A practical snapshot of what I use across control, robotics, embedded systems, and testing.
-            </p>
-
-            <div class="skill-cloud">
-              <span>ROS2</span><span>Gazebo</span><span>CARLA</span><span>MATLAB/Simulink</span><span>SolidWorks</span>
-              <span>OpenCV</span><span>LiDAR</span><span>Depth Camera</span><span>IMU</span><span>Sensor Calibration</span>
-              <span>PID / PI / P</span><span>PID Tuning</span><span>MPC / NMPC</span><span>Nonlinear Control</span><span>Multivariable Control</span>
-              <span>Arduino</span><span>Teensy</span><span>ESP32</span><span>Raspberry Pi</span><span>FreeRTOS</span><span>Linux</span>
-              <span>CAN</span><span>UART</span><span>SPI</span><span>I2C</span>
-              <span>PCB</span><span>BOM</span><span>Multisim</span><span>Circuit Analysis</span><span>Voltage Divider</span><span>RLC Circuits</span>
-              <span>Oscilloscope</span><span>Multimeter</span><span>Signal Generator</span><span>AC/DC Measurement</span>
-              <span>Python</span><span>C/C++</span><span>R</span><span>Statistical Computing</span>
-              <span>Encoders</span><span>Motor Drivers</span><span>Electric Vehicles</span>
-              <span>Kinematics</span><span>SLAM</span><span>Navigation</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Experience (workflow style, not resume bullets) -->
-    <section id="experience" class="section alt">
-      <div class="wrap">
-        <div class="section-head reveal">
-          <h2>Experience</h2>
-          <p>
-          
-          </p>
-        </div>
-
-        <div class="stack">
-
-          <article class="xp2 reveal">
-            <div class="xp2-head">
-              <div>
-                <h3>Graduate Teaching Assistant — ESET 462 Advanced Control Systems</h3>
-                <div class="xp2-meta">Aug 2024 – May 2026 · Texas A&amp;M University</div>
-              </div>
-              <div class="xp2-badge">Control Labs • Real-time</div>
-            </div>
-
-            <p class="xp2-summary">
-              
-            </p>
-
-            <div class="workflow">
-              <div class="step">
-                <div class="step-title">1) Control design in simulation</div>
-                <div class="step-body">
-                  Develop plant + controller models in <b>MATLAB/Simulink</b> for motor speed/position and temperature control.
-                  Validate stability, transient response, and saturation behavior.
-                </div>
-              </div>
-
-              <div class="step">
-                <div class="step-title">2) Discrete-time + real-time implementation</div>
-                <div class="step-body">
-                  Convert controllers into discrete implementations and deploy using <b>Arduino IDE + FreeRTOS</b>:
-                  separate tasks for sensing, control update, PWM actuation, and logging.
-                </div>
-              </div>
-
-              <div class="step">
-                <div class="step-title">3) Hardware chain + instrumentation</div>
-                <div class="step-body">
-                  Hardware stack: <b>Arduino Mega 2560</b> + <b>L298N</b> motor driver. Use lab instrumentation to validate PWM signals,
-                  check sensor integrity, and confirm response matches expected physics.
-                </div>
-              </div>
-
-              <div class="step">
-                <div class="step-title">4) Tuning + robustness checks</div>
-                <div class="step-body">
-                  Hands-on tuning of <b>P/PI/PID</b> loops using measured step responses, disturbance injection, and anti-windup thinking under saturation.
-                  Evaluate overshoot, settling time, and steady-state error.
-                </div>
-              </div>
-
-              <div class="step">
-                <div class="step-title">5) Adaptive experiment using ToF feedback</div>
-                <div class="step-body">
-                  Implement adaptive motor-speed behavior using a <b>time-of-flight sensor</b> as feedback input, highlighting sensor noise,
-                  response trade-offs, and stable adaptation strategies.
-                </div>
-              </div>
-            </div>
-
-            <details class="deep">
-              <summary>Deep dive: what makes it “control engineering”</summary>
-              <ul>
-                <li>Sampling-time choice and discrete stability impacts</li>
-                <li>Integrator windup and actuator saturation limits</li>
-                <li>Noise vs responsiveness and filtering strategy</li>
-                <li>Deterministic scheduling & timing under FreeRTOS</li>
-              </ul>
-              <div class="tags">
-                <span>Simulink</span><span>Discrete Control</span><span>FreeRTOS</span><span>Motor Control</span><span>PID Tuning</span>
-              </div>
-            </details>
-          </article>
-
-          <article class="xp2 reveal">
-            <div class="xp2-head">
-              <div>
-                <h3>Graduate Research Assistant — Embedded Vehicle Systems & Test Development</h3>
-                <div class="xp2-meta">May 2026 – Present · Texas A&amp;M University</div>
-              </div>
-              <div class="xp2-badge">Embedded Test • CAN • Sensors</div>
-            </div>
-
-            <p class="xp2-summary">
-              
-            </p>
-
-            <div class="workflow">
-              <div class="step">
-                <div class="step-title">1) Translate requirements into measurable tests</div>
-                <div class="step-body">
-                  Convert system behavior into acceptance checks (tracking error, response time, timing constraints, signal shape) and pick instrumentation
-                  (oscilloscope / logic analyzer / DAQ).
-                </div>
-              </div>
-
-              <div class="step">
-                <div class="step-title">2) Build the test harness</div>
-                <div class="step-body">
-                  Design stimulus + measurement pathways (signal injection, sensor emulation, safe power handling) for repeatability across runs.
-                </div>
-              </div>
-
-              <div class="step">
-                <div class="step-title">3) CAN command/telemetry workflow</div>
-                <div class="step-body">
-                  Implement CAN messaging patterns for motor command and telemetry parsing, with time-stamped logs for post-analysis and regression tracking.
-                </div>
-              </div>
-
-              <div class="step">
-                <div class="step-title">4) Debug timing + integrity</div>
-                <div class="step-body">
-                  Diagnose jitter, bus load effects, and integrity issues using combined logs and instrumentation, then iterate toward stable timing.
-                </div>
-              </div>
-
-              <div class="step">
-                <div class="step-title">5) Sensor bring-up validation</div>
-                <div class="step-body">
-                  Integrate LiDAR/camera with sanity checks, sync strategy, and pipeline verification so data is stable enough for perception workflows.
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <article class="xp2 reveal">
-            <div class="xp2-head">
-              <div>
-                <h3>Robotics Engineer — Hardware/Software Integration & Testing</h3>
-                <div class="xp2-meta">May 2025 – Aug 2025 · Spacer Robotics</div>
-              </div>
-              <div class="xp2-badge">Perception → Control</div>
-            </div>
-
-            <p class="xp2-summary">
-              
-            </p>
-
-            <div class="workflow">
-              <div class="step">
-                <div class="step-title">1) Perception pipeline stabilization</div>
-                <div class="step-body">
-                  Process RGB frames, run segmentation/detection, and output stable targets (reduce flicker with filtering and thresholds).
-                </div>
-              </div>
-              <div class="step">
-                <div class="step-title">2) Geometry + transforms</div>
-                <div class="step-body">
-                  Convert detections into actionable coordinates using camera geometry assumptions and calibration-aligned transforms.
-                </div>
-              </div>
-              <div class="step">
-                <div class="step-title">3) Closed-loop actuation validation</div>
-                <div class="step-body">
-                  Tune command timing and control parameters for stable behavior; validate repeatability using structured test runs.
-                </div>
-              </div>
-              <div class="step">
-                <div class="step-title">4) Field debugging</div>
-                <div class="step-body">
-                  Resolve dropouts, latency, and actuator comms issues and improve robustness in real deployment conditions.
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <article class="xp2 reveal">
-            <div class="xp2-head">
-              <div>
-                <h3>ADAS Engineer</h3>
-                <div class="xp2-meta">Jun 2023 – Mar 2024 · UNO MINDA</div>
-              </div>
-              <div class="xp2-badge">Sensors • Bring-up</div>
-            </div>
-
-            <p class="xp2-summary">
-            </p>
-
-            <div class="workflow">
-              <div class="step">
-                <div class="step-title">1) Sensor interface bring-up</div>
-                <div class="step-body">
-                  Verify I2C/UART communication, harness integrity, and correct sensor configuration under test conditions.
-                </div>
-              </div>
-              <div class="step">
-                <div class="step-title">2) Calibration + accuracy characterization</div>
-                <div class="step-body">
-                  Quantify distance error vs target surfaces and ranges; refine thresholds based on measured distributions.
-                </div>
-              </div>
-              <div class="step">
-                <div class="step-title">3) Automated regression</div>
-                <div class="step-body">
-                  Implement data capture + logging for repeated validation and track performance across board/firmware revisions.
-                </div>
-              </div>
-            </div>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects -->
-    <section id="projects" class="section">
-      <div class="wrap">
-        <div class="section-head reveal">
-          <h2>Projects</h2>
-          <p>
-           
-          </p>
-        </div>
-
-        <div class="grid">
-          <article class="proj reveal">
-            <div class="proj-top">
-              <h3>IMU Orientation Estimation (Adaptive Complementary Filter)</h3>
-              <p class="muted">
-                6-axis IMU fusion: gyro integration + accelerometer tilt, drift and temperature bias analysis, adaptive complementary filtering,
-                and online bias estimation.
-              </p>
-              <div class="tags">
-                <span>Sensor Fusion</span><span>IMU</span><span>Complementary Filter</span><span>Bias Estimation</span>
-              </div>
-            </div>
-            <a class="btn small" href="project-imu.html">Learn more</a>
-          </article>
-
-          <article class="proj reveal">
-            <div class="proj-top">
-              <h3>4WD Torque Vectoring using NMPC (MATLAB/Simulink)</h3>
-              <p class="muted">
-                Nonlinear MPC for EV torque vectoring with in-wheel motors. Nonlinear vehicle model, actuator constraints, aggressive corner validation.
-              </p>
-              <div class="tags">
-                <span>NMPC</span><span>Vehicle Dynamics</span><span>Simulink</span><span>Optimization</span>
-              </div>
-            </div>
-            <a class="btn small" href="project-nmpc-tv.html">Learn more</a>
-          </article>
-
-          <article class="proj reveal">
-            <div class="proj-top">
-              <h3>Multi-Agent RL — Level-Based Foraging with Obstacles</h3>
-              <p class="muted">
-                Cooperative MARL using MAPPO in CTDE. Studied coordination under partial observability and obstacle bottlenecks.
-              </p>
-              <div class="tags">
-                <span>MAPPO</span><span>CTDE</span><span>Multi-Agent</span><span>RL</span>
-              </div>
-            </div>
-            <a class="btn small" href="project-marl-lbf.html">Learn more</a>
-          </article>
-
-          <article class="proj reveal">
-            <div class="proj-top">
-              <h3>Control-Oriented Vehicle Modeling & MPC Workflow (CARLA)</h3>
-              <p class="muted">
-                Simulation-based system identification for low-speed vehicle lateral/longitudinal dynamics, prepared for MPC design and validation.
-              </p>
-              <div class="tags">
-                <span>CARLA</span><span>System ID</span><span>MPC</span><span>Python</span>
-              </div>
-            </div>
-            <a class="btn small" href="project-carla-mpc.html">Learn more</a>
-          </article>
-
-          <article class="proj reveal">
-            <div class="proj-top">
-              <h3>DC Permanent Magnet Motor Modeling + DOE + Optimization</h3>
-              <p class="muted">
-                Electromechanical modeling, Simulink validation, DOE/RSM sensitivity analysis, Monte-Carlo tolerance study, optimization workflow.
-              </p>
-              <div class="tags">
-                <span>Motor Modeling</span><span>DOE/RSM</span><span>Monte Carlo</span><span>Optimization</span>
-              </div>
-            </div>
-            <a class="btn small" href="project-dcpm.html">Learn more</a>
-          </article>
-
-          <article class="proj reveal">
-            <div class="proj-top">
-              <h3>Vibration Sensitivity Analysis — Biopsy Robot (ANOVA/Regression)</h3>
-              <p class="muted">
-                Quantified which variables drive vibration amplitude. Found velocity terms dominate in tested region; angular terms less influential.
-              </p>
-              <div class="tags">
-                <span>ANOVA</span><span>Regression</span><span>Dynamics</span><span>Robotics</span>
-              </div>
-            </div>
-            <a class="btn small" href="project-biopsy-vibration.html">Learn more</a>
-          </article>
-
-          <article class="proj reveal">
-            <div class="proj-top">
-              <h3>ROS Navigation + Remote Teleoperation (Raspberry Pi)</h3>
-              <p class="muted">
-                Mapping + navigation workflow with RViz visualization and goal-driven motion. Remote teleop plus autonomy testing setup.
-              </p>
-              <div class="tags">
-                <span>ROS</span><span>Navigation</span><span>LiDAR</span><span>Raspberry Pi</span>
-              </div>
-            </div>
-            <a class="btn small" href="project-ros-nav.html">Learn more</a>
-          </article>
-
-          <article class="proj reveal">
-            <div class="proj-top">
-              <h3>Behavior Cloning for Autonomous Driving</h3>
-              <p class="muted">
-                Imitation learning pipeline to predict steering (and optionally throttle/brake) from camera frames.
-                Includes dataset balancing, augmentation, CNN regression, and closed-loop simulator validation.
-              </p>
-              <div class="tags">
-                <span>Imitation Learning</span><span>CNN</span><span>Computer Vision</span><span>Autonomy</span>
-              </div>
-            </div>
-            <a class="btn small" href="project-behavior-cloning.html">Learn more</a>
-          </article>
-
-
-          <article class="proj reveal">
-            <div class="proj-top">
-              <h3>Vector Coordinate Obstacle Detection (Ultrasonic + ToF)</h3>
-              <p class="muted">
-                Feasible geometry approach: infer object position in a 2D frame using multi-sensor range constraints and known sensor placement.
-              </p>
-              <div class="tags">
-                <span>ToF</span><span>Ultrasonic</span><span>Geometry</span><span>Arduino</span>
-              </div>
-            </div>
-            <a class="btn small" href="project-obstacle-detect.html">Learn more</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="section alt">
-      <div class="wrap">
-        <div class="section-head reveal">
-          <h2>Contact</h2>
-          <p>Let’s talk controls, robotics, embedded systems, and autonomous vehicles.</p>
-        </div>
-
-        <div class="contact-grid">
-          <div class="card reveal">
-            <h3>Email</h3>
-            <p><a class="link" href="mailto:jeffryrufus@tamu.edu">jeffryrufus@tamu.edu</a></p>
-            <p><a class="link" href="mailto:jeffruf2001@gmail.com">jeffruf2001@gmail.com</a></p>
-          </div>
-
-          <div class="card reveal">
-            <h3>Phone</h3>
-            <p><a class="link" href="tel:+19793267595">+1 (979) 326-7595</a></p>
-          </div>
-
-          <div class="card reveal">
-            <h3>LinkedIn</h3>
-            <!-- Replace URL -->
-            <p><a class="link" href="https://www.linkedin.com/in/jeffryrwilliams/" target="_blank" rel="noreferrer">LinkedIn</a></p>
-          </div>
-        </div>
-
-        <footer class="footer">
-          <small>© <span id="year"></span> Jeffry Rufus Robert Williams</small>
-        </footer>
-      </div>
-    </section>
-
-    <script src="script.js"></script>
-  </body>
+<section id="contact">
+  <h2>Contact</h2>
+  <p class="section-intro">I'm graduating in December 2026 and looking for full-time mechanical, robotics and hardware roles. I'm happy to relocate.</p>
+  <div class="btns"><a class="btn" href="mailto:jeffruf2001@gmail.com">jeffruf2001@gmail.com</a><a class="btn ghost" href="tel:+19793267595">(979) 326-7595</a>
+  <a class="btn ghost" href="https://www.linkedin.com/in/jeffryrwilliams/" target="_blank" rel="noreferrer">LinkedIn</a></div>
+</section>
+</main>
+<footer><div class="wrap">Jeffry Rufus Robert Williams · College Station, TX · <a href="mailto:jeffruf2001@gmail.com">jeffruf2001@gmail.com</a></div></footer>
+</body>
 </html>

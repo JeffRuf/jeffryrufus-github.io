@@ -1,51 +1,22 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Obstacle Detection Geometry | Jeffry Williams</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header class="top">
-      <div class="wrap nav">
-        <a class="brand" href="index.html#projects"><span class="brand-dot"></span><span class="brand-text">Back to Projects</span></a>
-        <nav class="nav-links">
-          <a href="index.html#about">About</a>
-          <a href="index.html#experience">Experience</a>
-          <a class="btn" href="index.html#contact">Contact</a>
-        </nav>
-      </div>
-    </header>
-
-    <main class="section">
-      <div class="wrap">
-        <div class="section-head reveal">
-          <h2>Vector Coordinate Obstacle Detection (Ultrasonic + ToF)</h2>
-          <p class="small-muted">Sensors • Geometry • Calibration • Embedded</p>
-        </div>
-
-        <div class="card reveal">
-          <h3>Abstract</h3>
-          <p>
-            Designed a low-cost obstacle localization concept using range sensors. ToF sensors provide stable short-range distance estimates,
-            while ultrasonic sensors extend range with a wider beam. With known sensor positions (or a swept sensor), range constraints can be
-            used to infer obstacle coordinates in a local frame via triangulation or geometric fitting. Accuracy depends on beam width,
-            surface reflectivity, and calibration.
-          </p>
-        </div>
-
-        <div class="card reveal" style="margin-top:14px;">
-          <h3>Artifacts (add your links)</h3>
-          <div class="tags">
-            <span>📄 Report:<a href="https://drive.google.com/file/d/1pYdmPwmi1Xn7SgOvxouc4_TSceQSyg2J/view?usp=drive_link" target="Report"> Report</a></span></span>
-          
-            <span>🖼️ Setup Photos/Schematics:<a href="https://drive.google.com/drive/folders/12QO9uBkiQgGPbnj6uUWE18vZV9xXw4MI?usp=sharing" target="Test Images"> Test Images</a></span></span>
-          </div>
-        </div>
-      </div>
-    </main>
-
-    <script src="script.js"></script>
-  </body>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Obstacle localization with ultrasonic and ToF sensors | Jeffry Rufus Robert Williams</title>
+<meta name="description" content="A low-cost way to find where an obstacle is, not just how far. ToF sensors give stable short-range distances and ultrasonic sensors reach farther with">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top"><div class="wrap nav">
+  <a class="brand" href="index.html">Jeffry Rufus Robert Williams</a>
+  <nav class="nav-links">
+    <a href="index.html#work">Work</a><a href="index.html#experience">Experience</a>
+    <a href="index.html#projects">Projects</a><a href="index.html#skills">Skills</a><a href="index.html#contact">Contact</a>
+  </nav>
+</div></header>
+<main class="wrap">
+<div class="page-head"><a class="back" href="index.html#work">← Back to all work</a><p class="eyebrow">Course project · Sensors · Embedded</p><h1>Obstacle localization with ultrasonic and ToF sensors</h1><p class="lead">A low-cost way to find where an obstacle is, not just how far. ToF sensors give stable short-range distances and ultrasonic sensors reach farther with a wider beam. With known sensor positions, the ranges can be turned into x and y coordinates of the obstacle.</p><div class="links"><a class="btn ghost" href="https://drive.google.com/file/d/1pYdmPwmi1Xn7SgOvxouc4_TSceQSyg2J/view?usp=drive_link" target="_blank" rel="noreferrer">Report</a></div></div><div class="block"><h2>Test setup</h2><div class="gallery two"><figure><img src="img-obstacle-setup.jpg" alt="An extrusion target on a grid sheet in front of the sensors" loading="lazy"><figcaption>An extrusion target on a grid sheet in front of the sensors</figcaption></figure></div><ul class="points"><li>Accuracy depends on beam width, surface reflectivity and calibration, so I tested at known grid positions.</li></ul></div></main>
+<footer><div class="wrap">Jeffry Rufus Robert Williams · College Station, TX · <a href="mailto:jeffruf2001@gmail.com">jeffruf2001@gmail.com</a></div></footer>
+</body>
 </html>

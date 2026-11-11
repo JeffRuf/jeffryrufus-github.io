@@ -1,65 +1,22 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>CARLA System ID + MPC | Jeffry Williams</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header class="top">
-      <div class="wrap nav">
-        <a class="brand" href="index.html#projects"><span class="brand-dot"></span><span class="brand-text">Back to Projects</span></a>
-        <nav class="nav-links">
-          <a href="index.html#about">About</a>
-          <a href="index.html#experience">Experience</a>
-          <a class="btn" href="index.html#contact">Contact</a>
-        </nav>
-      </div>
-    </header>
-
-    <main class="section">
-      <div class="wrap">
-        <div class="section-head reveal">
-          <h2>Control-Oriented Vehicle Modeling & MPC Workflow (CARLA)</h2>
-          <p class="small-muted">System Identification • Control-Oriented Modeling • MPC • Validation</p>
-        </div>
-
-        <div class="card reveal">
-          <h3>Abstract</h3>
-          <p>
-            Developed a control-oriented dynamic model of a low-speed autonomous vehicle and used it as the basis for MPC design.
-            Instead of relying on proprietary parameters, simulation-based system identification experiments were executed in CARLA to
-            characterize lateral (steering-to-yaw response) and longitudinal (throttle-to-speed) dynamics. The resulting lightweight models are
-            structured for real-time optimization and transfer to a physical platform operating in a similar speed range.
-          </p>
-        </div>
-
-        <div class="two-col" style="margin-top:14px;">
-          <div class="card reveal">
-            <h3>Why it’s feasible</h3>
-            <p>
-              System identification is feasible when inputs (steer/throttle) are deliberately excited and outputs are measured.
-              At low speed, a simplified model often captures dominant dynamics sufficiently for MPC, especially within a restricted operating envelope.
-            </p>
-            <div class="tags">
-              <span>Low-Speed Modeling</span><span>System ID</span><span>MPC</span>
-            </div>
-          </div>
-
-          <div class="card reveal">
-            <h3>Artifacts </h3>
-            <div class="tags">
-              <span>📄 Report: [add link]</span>
-              <span>🎥 Demo Video: [add link]</span>
-              <span>🖼️ Plots/Screenshots: [add images]</span>
-              <span>💻 Scripts (optional): [add link]</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-
-    <script src="script.js"></script>
-  </body>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lane keeping and overtaking with MPC in CARLA | Jeffry Rufus Robert Williams</title>
+<meta name="description" content="The software side of my thesis. I identified simple models of how the vehicle responds to steering and throttle at low speed, then built MPC controlle">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top"><div class="wrap nav">
+  <a class="brand" href="index.html">Jeffry Rufus Robert Williams</a>
+  <nav class="nav-links">
+    <a href="index.html#work">Work</a><a href="index.html#experience">Experience</a>
+    <a href="index.html#projects">Projects</a><a href="index.html#skills">Skills</a><a href="index.html#contact">Contact</a>
+  </nav>
+</div></header>
+<main class="wrap">
+<div class="page-head"><a class="back" href="index.html#work">← Back to all work</a><p class="eyebrow">Thesis software · Python · acados · CARLA</p><h1>Lane keeping and overtaking with MPC in CARLA</h1><p class="lead">The software side of my thesis. I identified simple models of how the vehicle responds to steering and throttle at low speed, then built MPC controllers on them that run in real time.</p></div><div class="block"><h2>What I built</h2><ul class="points"><li>Lane-keeping MPC that follows the lane center from camera lane detection.</li><li>A hierarchical MPC for overtaking: 6 overtakes on a 40 m obstacle course with zero collisions, backed by an emergency-braking supervisor.</li><li>Fixed reference stretching by resampling the path by arc length, and used soft obstacle constraints so the solver always returns a command.</li></ul></div><div class="block"><div class="gallery two"><figure><video src="vid-carla-lkmpc.mp4" poster="vid-carla-lkmpc-poster.jpg" controls muted playsinline preload="none"></video><figcaption>Lane-keeping MPC running in CARLA</figcaption></figure><figure><img src="img-carla-mpc.jpg" alt="Camera view, lane detection and bird&#x27;s-eye view" loading="lazy"><figcaption>Camera view, lane detection and bird&#x27;s-eye view</figcaption></figure></div></div></main>
+<footer><div class="wrap">Jeffry Rufus Robert Williams · College Station, TX · <a href="mailto:jeffruf2001@gmail.com">jeffruf2001@gmail.com</a></div></footer>
+</body>
 </html>

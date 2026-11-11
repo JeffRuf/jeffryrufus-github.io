@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rebar-tying robot | Jeffry Rufus Robert Williams</title>
+<meta name="description" content="A gantry robot that rides on a rebar grid and ties the crossings. I designed the chassis in SolidWorks, made the BOM, built the prototype, integrated ">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top"><div class="wrap nav">
+  <a class="brand" href="index.html">Jeffry Rufus Robert Williams</a>
+  <nav class="nav-links">
+    <a href="index.html#work">Work</a><a href="index.html#experience">Experience</a>
+    <a href="index.html#projects">Projects</a><a href="index.html#skills">Skills</a><a href="index.html#contact">Contact</a>
+  </nav>
+</div></header>
+<main class="wrap">
+<div class="page-head"><a class="back" href="index.html#work">← Back to all work</a><p class="eyebrow">Arn Autonomy (formerly Spacer Robotics) · San Francisco · May to Aug 2025</p><h1>Rebar-tying robot</h1><p class="lead">A gantry robot that rides on a rebar grid and ties the crossings. I designed the chassis in SolidWorks, made the BOM, built the prototype, integrated the hardware and tested it. The hardware is still in development at the company, so I can't share photos.</p></div><div class="block"><h2>Sizing the chassis</h2><ul class="points"><li>The 427 × 427 mm footprint came from the rebar grid spacing and the tool loads. The frame uses 2020 aluminum extrusions, drivetrain mounts and a guide-rail-stabilized linear actuator for the tying tool.</li><li>The first frame used heavy 4045 extrusions. I went back to the loads and did the hand calcs: stiffness was the real limit, not strength.</li><li>I moved to 2020 and doubled only the guide-rail members. The robot got 25% lighter while beam deflection stayed under 0.5 mm with a safety factor above 2 under a 2× dynamic load.</li></ul></div><div class="block"><h2>Building it</h2><ul class="points"><li>One fastener size across the build and standard extrusion hardware, so assembly is quick. Gusset plates resist frame racking.</li><li>I made the BOM and built the prototype myself.</li></ul></div><div class="block"><h2>Testing it</h2><ul class="points"><li>Paired 30 Hz visual servoing with a 200 Hz PID loop. Tool repeatability stayed under 5 mm over 100+ runs.</li><li>Rebar-crossing detection went from under 50% to 90% after I labeled 200+ crossings the robot missed in live grid runs and retrained YOLOv5.</li></ul></div></main>
+<footer><div class="wrap">Jeffry Rufus Robert Williams · College Station, TX · <a href="mailto:jeffruf2001@gmail.com">jeffruf2001@gmail.com</a></div></footer>
+</body>
+</html>

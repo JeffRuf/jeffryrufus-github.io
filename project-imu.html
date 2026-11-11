@@ -1,94 +1,22 @@
 <!doctype html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>IMU Orientation Estimation | Jeffry Williams</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IMU orientation with an adaptive complementary filter | Jeffry Rufus Robert Williams</title>
+<meta name="description" content="A 6-axis IMU gives roll, pitch and yaw two ways. Integrating the gyro is smooth but drifts. Using gravity from the accelerometer doesn&#x27;t drift but is ">
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <header class="top">
-    <div class="wrap nav">
-      <a class="brand" href="index.html#projects"><span class="brand-dot"></span><span class="brand-text">Back to
-          Projects</span></a>
-      <nav class="nav-links">
-        <a href="index.html#about">About</a>
-        <a href="index.html#experience">Experience</a>
-        <a class="btn" href="index.html#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
-
-  <main class="section">
-    <div class="wrap">
-      <div class="section-head reveal">
-        <h2>IMU Orientation Estimation with Adaptive Complementary Filtering</h2>
-        <p class="small-muted">Sensor Fusion • IMU • Bias/Drift • Adaptive Filtering</p>
-      </div>
-
-      <div class="card reveal">
-        <h3>Abstract</h3>
-        <p>
-          This project builds an orientation estimation pipeline using a 6-axis IMU (MPU6050-class) to compute roll,
-          pitch, and yaw.
-          The gyroscope is integrated to capture fast rotational motion, while accelerometer-based tilt provides a
-          low-frequency reference.
-          A complementary filter blends both sources to reduce noise and long-term drift. The pipeline is extended with
-          (1) drift-rate quantification,
-          (2) temperature-dependent bias characterization, (3) adaptive filter weighting based on motion intensity, and
-          (4) online gyro bias estimation.
-        </p>
-      </div>
-
-      <div class="two-col" style="margin-top:14px;">
-        <div class="card reveal">
-          <h3>Physics & Why it Works</h3>
-          <p>
-            Gyros measure angular rate and must be integrated → small bias accumulates into drift. Accelerometers
-            measure specific force;
-            when motion is mild, gravity dominates and provides a stable tilt reference. The complementary filter
-            combines high-pass gyro behavior
-            with low-pass accelerometer tilt to produce stable orientation.
-          </p>
-          <div class="tags">
-            <span>Drift</span><span>Bias</span><span>Gravity Reference</span><span>Filtering</span>
-          </div>
-        </div>
-
-        <div class="card reveal">
-          <h3>Method</h3>
-          <ul class="focus">
-            <li>Integrate gyro to estimate angles and compute drift rate (deg/s) under stationary conditions</li>
-            <li>Compute roll/pitch from accelerometer tilt equations and compare to gyro integration</li>
-            <li>Run cold/room/warm datasets to quantify temperature-induced bias effects</li>
-            <li>Adaptive complementary filter: change α based on motion intensity</li>
-            <li>Online bias estimation: update gyro bias while stationary / low-motion</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="card reveal" style="margin-top:14px;">
-        <h3>Results & Validation (what to show)</h3>
-        <p>
-          Recommended plots: gyro-integrated angles vs accel tilt, drift rate per axis, effect of temperature on bias
-          and drift,
-          adaptive α behavior during motion, and final fused orientation stability.
-        </p>
-      </div>
-
-      <div class="card reveal" style="margin-top:14px;">
-        <h3>Artifacts</h3>
-        <div class="tags">
-          <span>🖼️ Images/Plots: <a href="https://drive.google.com/drive/folders/1Mwbkmwv2oCRy7zjU6N8wfuQ2lrZf4Wjd?usp=sharing" target="_blank">Images/Plots</a></span>
-          <span>💻 Code: <a href="https://drive.google.com/drive/folders/1Mwbkmwv2oCRy7zjU6N8wfuQ2lrZf4Wjd?usp=sharing" target="_blank">Code</a></span>
-        </div>
-      </div>
-    </div>
-  </main>
-
-  <script src="script.js"></script>
+<header class="top"><div class="wrap nav">
+  <a class="brand" href="index.html">Jeffry Rufus Robert Williams</a>
+  <nav class="nav-links">
+    <a href="index.html#work">Work</a><a href="index.html#experience">Experience</a>
+    <a href="index.html#projects">Projects</a><a href="index.html#skills">Skills</a><a href="index.html#contact">Contact</a>
+  </nav>
+</div></header>
+<main class="wrap">
+<div class="page-head"><a class="back" href="index.html#work">← Back to all work</a><p class="eyebrow">Course project · MEEN 700 · MATLAB</p><h1>IMU orientation with an adaptive complementary filter</h1><p class="lead">A 6-axis IMU gives roll, pitch and yaw two ways. Integrating the gyro is smooth but drifts. Using gravity from the accelerometer doesn't drift but is noisy, especially when the sensor shakes. I blended the two and then made the blend adapt to how much the sensor is moving.</p><div class="links"><a class="btn ghost" href="https://drive.google.com/drive/folders/1Mwbkmwv2oCRy7zjU6N8wfuQ2lrZf4Wjd?usp=sharing" target="_blank" rel="noreferrer">Code</a></div></div><div class="block"><h2>The two raw signals</h2><div class="gallery"><figure><img src="img-imu-gyro-integration.png" alt="Gyro integration slowly drifts" loading="lazy"><figcaption>Gyro integration slowly drifts</figcaption></figure><figure><img src="img-imu-accel-stationary.png" alt="Accelerometer angles at rest: noisy but centered" loading="lazy"><figcaption>Accelerometer angles at rest: noisy but centered</figcaption></figure><figure><img src="img-imu-accel-shaking.png" alt="Accelerometer angles while shaking: unusable alone" loading="lazy"><figcaption>Accelerometer angles while shaking: unusable alone</figcaption></figure></div></div><div class="block"><h2>Blending them</h2><div class="gallery two"><figure><img src="img-imu-stationary.png" alt="At rest: gyro, accelerometer and the filter" loading="lazy"><figcaption>At rest: gyro, accelerometer and the filter</figcaption></figure><figure><img src="img-imu-methods.png" alt="Gyro-only drifts to thousands of degrees; the filter stays stable" loading="lazy"><figcaption>Gyro-only drifts to thousands of degrees; the filter stays stable</figcaption></figure></div></div><div class="block"><h2>Bias and temperature</h2><ul class="points"><li>Measured gyro bias in a fridge, at room temperature and warm. Bias shifts with temperature, so it has to be tracked.</li><li>Estimated the bias online whenever the sensor is still, and let the filter weight change with motion.</li></ul><div class="gallery"><figure><img src="img-imu-bias-temp.png" alt="Gyro bias vs temperature" loading="lazy"><figcaption>Gyro bias vs temperature</figcaption></figure><figure><img src="img-imu-adaptive.png" alt="Fixed vs adaptive blend, and the blend weight responding to motion" loading="lazy"><figcaption>Fixed vs adaptive blend, and the blend weight responding to motion</figcaption></figure><figure><img src="img-imu-bias-online.png" alt="Real-time gyro bias estimate" loading="lazy"><figcaption>Real-time gyro bias estimate</figcaption></figure></div></div></main>
+<footer><div class="wrap">Jeffry Rufus Robert Williams · College Station, TX · <a href="mailto:jeffruf2001@gmail.com">jeffruf2001@gmail.com</a></div></footer>
 </body>
-
 </html>

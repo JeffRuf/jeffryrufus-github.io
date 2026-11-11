@@ -1,89 +1,22 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>NMPC Torque Vectoring | Jeffry Rufus Robert Williams</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header class="top">
-      <div class="wrap nav">
-        <a class="brand" href="index.html#projects">
-          <span class="brand-dot"></span>
-          <span class="brand-text">Back to Projects</span>
-        </a>
-        <nav class="nav-links">
-          <a href="index.html#about">About</a>
-          <a href="index.html#experience">Experience</a>
-          <a class="btn" href="index.html#contact">Contact</a>
-        </nav>
-      </div>
-    </header>
-
-    <main class="section">
-      <div class="wrap">
-        <div class="section-head reveal">
-          <h2>4WD Torque Vectoring using NMPC (MATLAB/Simulink)</h2>
-          <p class="small-muted">Vehicle Dynamics • Nonlinear MPC • Constraints • Simulation Validation</p>
-        </div>
-
-        <div class="card reveal">
-          <h3>Abstract</h3>
-          <p>
-            This project designs and validates a Nonlinear Model Predictive Controller (NMPC) for four-wheel torque vectoring in an electric vehicle
-            with independently controlled wheel motors. A control-oriented nonlinear vehicle model predicts future motion and computes wheel torque
-            commands that improve stability and path tracking while respecting actuator constraints (torque limits and torque-rate limits).
-            The controller is implemented in MATLAB/Simulink and evaluated on high lateral-load trajectories to compare performance against a
-            non-vectoring baseline.
-          </p>
-        </div>
-
-        <div class="two-col" style="margin-top:14px;">
-          <div class="card reveal">
-            <h3>Physics & Control Intuition</h3>
-            <p>
-              Differential wheel torque generates a net yaw moment. Under high lateral acceleration, a baseline vehicle may understeer due to limited
-              lateral tire force and yaw response. NMPC uses prediction to select a feasible torque sequence that improves yaw behavior and tracking
-              without violating actuator limits or causing unstable oscillations.
-            </p>
-            <div class="tags">
-              <span>Yaw Moment</span><span>Tire Forces</span><span>Constraints</span><span>Optimization</span>
-            </div>
-          </div>
-
-          <div class="card reveal">
-            <h3>What I Validated</h3>
-            <ul class="focus">
-              <li>Trajectory tracking error (position RMSE) vs baseline</li>
-              <li>Yaw rate response and heading tracking</li>
-              <li>Torque split behavior (left vs right) during cornering</li>
-              <li>Constraint activity: torque magnitude + torque slew rate</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Fancy Artifacts -->
-        <div class="card reveal" style="margin-top:14px;">
-          <h3>Artifacts</h3>
-          <p class="small-muted">
-            Add your PDF/video/images by uploading them into Replit and updating the paths below.
-          </p>
-
-          <div class="artifact-links">
-            <a class="btn small" href="https://drive.google.com/file/d/11j8LgCE_9Q7pgZ43GHyXh2iherYZz5ON/view?usp=sharing" target="_blank">📄 Project Report</a>
-            <a class="btn small" href="https://drive.google.com/drive/folders/1V46ZFBlZwu56D7m1Q77BsJm_qsGl9ctB?usp=sharing" target="Google_Drive">💻 Source Code</a>
-            <a class="btn small" href="https://drive.google.com/drive/folders/1iKCKYZw0ReSjoQ6dGmCdeVRy12w2Sn_s?usp=sharing" target="Google_Drive">💻 Plots</a>
-          </div>
-
-         
-
-          <!-- Code: paste any sample code here -->
-    
-        </div>
-      </div>
-    </main>
-
-    <script src="script.js"></script>
-  </body>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Torque vectoring for a 4-motor EV with nonlinear MPC | Jeffry Rufus Robert Williams</title>
+<meta name="description" content="An electric vehicle with a motor in each wheel can steer itself a little by pushing harder on one side. I built a nonlinear MPC that picks the four wh">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top"><div class="wrap nav">
+  <a class="brand" href="index.html">Jeffry Rufus Robert Williams</a>
+  <nav class="nav-links">
+    <a href="index.html#work">Work</a><a href="index.html#experience">Experience</a>
+    <a href="index.html#projects">Projects</a><a href="index.html#skills">Skills</a><a href="index.html#contact">Contact</a>
+  </nav>
+</div></header>
+<main class="wrap">
+<div class="page-head"><a class="back" href="index.html#work">← Back to all work</a><p class="eyebrow">Course project · MATLAB/Simulink</p><h1>Torque vectoring for a 4-motor EV with nonlinear MPC</h1><p class="lead">An electric vehicle with a motor in each wheel can steer itself a little by pushing harder on one side. I built a nonlinear MPC that picks the four wheel torques every 20 ms to keep the car on its path in hard corners.</p><div class="links"><a class="btn ghost" href="https://drive.google.com/file/d/11j8LgCE_9Q7pgZ43GHyXh2iherYZz5ON/view?usp=sharing" target="_blank" rel="noreferrer">Project report</a><a class="btn ghost" href="https://drive.google.com/drive/folders/1V46ZFBlZwu56D7m1Q77BsJm_qsGl9ctB?usp=sharing" target="_blank" rel="noreferrer">Source code</a></div></div><div class="block"><h2>How it works</h2><ul class="points"><li>A six-state vehicle model (forward and side speed, yaw rate, and position) with Ackermann steering and linear tires.</li><li>The NMPC tracks heading and speed while keeping each motor within ±300 Nm and limiting how fast torque can change.</li><li>Pushing harder on the outside wheels creates a yaw moment that fights understeer.</li></ul></div><div class="block"><h2>Result</h2><ul class="points"><li>Test track: 50 m radius curves at 72 km/h, about 0.82 g of side force, with steering made 30% less effective to force understeer.</li><li>Torque vectoring cut path-tracking error about 60% compared with an equal torque split.</li></ul></div></main>
+<footer><div class="wrap">Jeffry Rufus Robert Williams · College Station, TX · <a href="mailto:jeffruf2001@gmail.com">jeffruf2001@gmail.com</a></div></footer>
+</body>
 </html>
