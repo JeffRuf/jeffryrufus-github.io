@@ -4,19 +4,26 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Obstacle localization with ultrasonic and ToF sensors | Jeffry Rufus Robert Williams</title>
-<meta name="description" content="A low-cost way to find where an obstacle is, not just how far. ToF sensors give stable short-range distances and ultrasonic sensors reach farther with">
+<meta name="description" content="A low-cost way to find where an obstacle is, not just how far. ToF sensors give stable short-range distances and ultrasonic sensors reach farther with a wi">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="top"><div class="wrap nav">
-  <a class="brand" href="index.html">Jeffry Rufus Robert Williams</a>
+  <a class="brand" href="index.html"><span class="mark">JRW</span>Jeffry Rufus Robert Williams</a>
   <nav class="nav-links">
-    <a href="index.html#work">Work</a><a href="index.html#experience">Experience</a>
-    <a href="index.html#projects">Projects</a><a href="index.html#skills">Skills</a><a href="index.html#contact">Contact</a>
+    <a href="index.html#work">Work</a><a href="index.html#projects">Projects</a>
+    <a href="index.html#experience">Experience</a><a href="index.html#skills">Skills</a><a href="index.html#contact">Contact</a>
   </nav>
 </div></header>
-<main class="wrap">
-<div class="page-head"><a class="back" href="index.html#work">← Back to all work</a><p class="eyebrow">Course project · Sensors · Embedded</p><h1>Obstacle localization with ultrasonic and ToF sensors</h1><p class="lead">A low-cost way to find where an obstacle is, not just how far. ToF sensors give stable short-range distances and ultrasonic sensors reach farther with a wider beam. With known sensor positions, the ranges can be turned into x and y coordinates of the obstacle.</p><div class="links"><a class="btn ghost" href="https://drive.google.com/file/d/1pYdmPwmi1Xn7SgOvxouc4_TSceQSyg2J/view?usp=drive_link" target="_blank" rel="noreferrer">Report</a></div></div><div class="block"><h2>Test setup</h2><div class="gallery two"><figure><img src="img-obstacle-setup.jpg" alt="An extrusion target on a grid sheet in front of the sensors" loading="lazy"><figcaption>An extrusion target on a grid sheet in front of the sensors</figcaption></figure></div><ul class="points"><li>Accuracy depends on beam width, surface reflectivity and calibration, so I tested at known grid positions.</li></ul></div></main>
-<footer><div class="wrap">Jeffry Rufus Robert Williams · College Station, TX · <a href="mailto:jeffruf2001@gmail.com">jeffruf2001@gmail.com</a></div></footer>
+<div class="dark grid-bg"><div class="wrap page-hero"><a class="crumb" href="index.html#work">← All work</a><h1>Obstacle localization with ultrasonic and ToF sensors</h1><div class="intro"><div><p class="label"><span class="dot"></span>Course project · Sensors · Embedded</p><p class="lead" style="margin-top:14px">A low-cost way to find where an obstacle is, not just how far. ToF sensors give stable short-range distances and ultrasonic sensors reach farther with a wider beam. With known sensor positions, the ranges become x and y coordinates of the obstacle.</p><div class="btns"><a class="btn ghost" href="https://drive.google.com/file/d/1pYdmPwmi1Xn7SgOvxouc4_TSceQSyg2J/view?usp=drive_link" target="_blank" rel="noreferrer">Report ↗</a></div></div><div><table class="spec-table"><tr><th>Type</th><td>Course project</td></tr><tr><th>Sensors</th><td>Ultrasonic, time-of-flight</td></tr><tr><th>Method</th><td>Range fusion from known sensor positions</td></tr></table></div></div></div></div><main class="wrap"><div class="block"><div class="num">01</div><div class="text-col"><h2>Test setup</h2><p>Accuracy depends on beam width, surface reflectivity and calibration, so the sensors were tested against a target at known grid positions.</p><div class="gallery two"><figure><div class="media"><img src="img-obstacle-setup.jpg" alt="Extrusion target on a grid sheet in front of the sensors" loading="lazy"></div><figcaption><b>Fig. 01</b>Extrusion target on a grid sheet in front of the sensors</figcaption></figure></div></div></div><div class="next"><a class="more" href="index.html#work">← Back to all work</a><a class="more" href="index.html#contact">Get in touch →</a></div></main><footer><div class="wrap"><span>Jeffry Rufus Robert Williams · College Station, TX</span>
+<span><a href="mailto:jeffruf2001@gmail.com">jeffruf2001@gmail.com</a> · <a href="https://www.linkedin.com/in/jeffryrwilliams/" target="_blank" rel="noreferrer">LinkedIn</a></span></div></footer>
+<div class="lb" id="lb"><img alt=""></div>
+<script>
+(function(){var lb=document.getElementById('lb'),im=lb.querySelector('img');
+document.querySelectorAll('.gallery .media img').forEach(function(i){i.addEventListener('click',function(){im.src=i.src;im.alt=i.alt;lb.classList.add('on')})});
+lb.addEventListener('click',function(){lb.classList.remove('on')});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')lb.classList.remove('on')});})();
+</script>
 </body>
 </html>

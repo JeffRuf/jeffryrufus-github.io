@@ -4,118 +4,131 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Jeffry Rufus Robert Williams | Mechanical &amp; Robotics Engineer</title>
-<meta name="description" content="Mechanical and robotics engineer: autonomous EV conversion, rebar-tying robot, die-cast and molded EV enclosures.">
+<meta name="description" content="Mechanical and robotics engineer: autonomous EV conversion, rebar-tying robot, die-cast and molded EV enclosures, MPC controls.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="top"><div class="wrap nav">
-  <a class="brand" href="index.html">Jeffry Rufus Robert Williams</a>
+  <a class="brand" href="index.html"><span class="mark">JRW</span>Jeffry Rufus Robert Williams</a>
   <nav class="nav-links">
-    <a href="index.html#work">Work</a><a href="index.html#experience">Experience</a>
-    <a href="index.html#projects">Projects</a><a href="index.html#skills">Skills</a><a href="index.html#contact">Contact</a>
+    <a href="index.html#work">Work</a><a href="index.html#projects">Projects</a>
+    <a href="index.html#experience">Experience</a><a href="index.html#skills">Skills</a><a href="index.html#contact">Contact</a>
   </nav>
 </div></header>
-<main class="wrap">
+<div class="dark grid-bg"><div class="wrap">
 <div class="hero">
   <div>
-    <p class="eyebrow">Mechanical engineer · Hardware design and integration · Robotics</p>
-    <h1>Hi, I'm Jeffry.</h1>
-    <p class="lead">I love turning designs on a CAD screen into systems that work in the real world. I ask why on every part
-    of a design, I look for the simplest version that still does the job, and I build and test what I design.</p>
-    <p class="lead" style="font-size:17px">Master's student at Texas A&amp;M, graduating December 2026, and open to full-time roles.</p>
-    <div class="btns"><a class="btn" href="#work">See my work</a><a class="btn ghost" href="#contact">Contact me</a>
-    <a class="btn ghost" href="https://www.linkedin.com/in/jeffryrwilliams/" target="_blank" rel="noreferrer">LinkedIn</a></div>
+    <p class="label"><span class="dot"></span>Mechanical · Robotics · Controls</p>
+    <h1>Jeffry Rufus Robert Williams</h1>
+    <p class="role">Mechanical &amp; Robotics Engineer</p>
+    <p class="lead">I design, build and test hardware for robots and vehicles: mechanisms, sensor mounts, enclosures
+    and the controls that drive them. M.S. at Texas A&amp;M, graduating December 2026.</p>
+    <div class="btns"><a class="btn" href="#work">View work</a><a class="btn ghost" href="#contact">Contact</a>
+    <a class="btn ghost" href="https://www.linkedin.com/in/jeffryrwilliams/" target="_blank" rel="noreferrer">LinkedIn ↗</a></div>
   </div>
-  <figure class="hero-photo"><img src="img-atv-me-working.jpg" alt="Jeffry working on the autonomous vehicle">
-  <figcaption>Working on the steering hardware of our autonomous vehicle</figcaption></figure>
+  <figure class="hero-photo"><img src="img-atv-me-working.jpg" alt="Jeffry fitting steering hardware on the autonomous vehicle">
+  <figcaption>FIG. 01 · Steering hardware, autonomous EV conversion</figcaption></figure>
 </div>
-<div class="stats">
-  <div class="stat"><b>0.35°</b><span>steering angle resolution from my geared encoder drive</span></div>
-  <div class="stat"><b>25%</b><span>lighter robot chassis at Arn Autonomy</span></div>
-  <div class="stat"><b>15%</b><span>lighter die-cast EV charger enclosure</span></div>
-  <div class="stat"><b>&lt;5 mm</b><span>robot tool repeatability over 100+ runs</span></div>
+<div class="specs">
+  <div class="spec"><b>0.35°</b><span>steering angle resolution, geared encoder drive</span></div>
+  <div class="spec"><b>1.02°</b><span>RMS steering tracking on the ground</span></div>
+  <div class="spec"><b>25%</b><span>lighter robot chassis at Arn Autonomy</span></div>
+  <div class="spec"><b>15%</b><span>lighter die-cast EV charger enclosure</span></div>
 </div>
+</div></div>
 
-<section id="work">
-  <h2>Main work</h2>
-  <p class="section-intro">Three projects where I owned the hardware from the first sketch to a tested part.</p>
+<main>
+<section id="work"><div class="wrap">
+  <div class="sec-head"><div class="num">01 / WORK</div><h2>Selected work</h2><p>Hardware I owned from first sketch to tested part.</p></div>
 
   <div class="feature">
-    <a class="feature-img" href="project-atv.html"><img src="img-enc-onvehicle.jpg" alt="Encoder drive on the EPS"></a>
+    <div class="mosaic">
+      <a href="project-atv.html"><img src="img-atv-vehicle.jpg" alt="Autonomous EV in the lab"></a>
+      <a href="project-atv.html"><img src="img-enc-onvehicle.jpg" alt="Encoder drive on the EPS"></a>
+      <a href="project-atv.html"><img src="img-lidar-photo.jpg" alt="LiDAR mount on the roll hoop"></a>
+    </div>
     <div>
-      <p class="eyebrow">Thesis · Texas A&amp;M · 2024 to now</p>
-      <h3><a href="project-atv.html">Turning an electric vehicle into an autonomous test vehicle</a></h3>
-      <ul class="points"><li>Designed a 4:1 geared encoder drive that reads the steering angle at 0.35° without modifying the column.</li><li>Built a board and enclosure that let a computer command the stock power steering. It tracks within 1.02° RMS on the ground.</li><li>Designed a fan-cooled LiDAR mount, a vibration-isolated camera mount and sheet-metal motor-controller mounts, all bolt-on.</li></ul>
-      <a class="more" href="project-atv.html">See the full build, with photos and videos →</a>
+      <p class="label"><span class="dot"></span>Thesis · Texas A&amp;M · 2024 to present</p>
+      <h3><a href="project-atv.html">Autonomous conversion of an electric vehicle</a></h3>
+      <p class="summary">Steering, sensing and electronics hardware that turned a bare-body EV into a computer-driven test vehicle, with no cutting, welding or drilling.</p>
+      <table class="spec-table"><tr><th>Steering sensing</th><td>4:1 geared encoder, 0.35° resolution</td></tr><tr><th>Steering control</th><td>1.02° RMS tracking on the ground</td></tr><tr><th>Sensor mounts</th><td>Fan-cooled LiDAR, vibration-isolated camera</td></tr><tr><th>Controls</th><td>Hierarchical MPC, zero collisions in CARLA</td></tr></table>
+      <a class="more" href="project-atv.html">View the build →</a>
     </div>
   </div>
 
-  <div class="feature">
-    <div class="feature-wide">
-      <p class="eyebrow">Arn Autonomy · San Francisco · Summer 2025</p>
+  <div class="pair">
+    <div class="panel">
+      <p class="label"><span class="dot"></span>Arn Autonomy · San Francisco · 2025</p>
       <h3><a href="project-rebar.html">Rebar-tying robot</a></h3>
-      <ul class="points"><li>Designed a 427 × 427 mm gantry chassis in SolidWorks from the rebar grid spacing and tool loads.</li><li>Right-sized it from 4045 to 2020 extrusions after hand calcs showed stiffness was the limit: 25% lighter, deflection under 0.5 mm.</li><li>Built the prototype and reached sub-5 mm tool repeatability over 100+ runs.</li></ul>
-      <a class="more" href="project-rebar.html">Read more →</a>
-      <p class="note">The robot is still in development at the company, so I can't share photos.</p>
+      <p class="summary">Gantry chassis designed, built and tested for a robot that ties rebar crossings.</p>
+      <table class="spec-table"><tr><th>Footprint</th><td>427 × 427 mm, 2020 extrusion</td></tr><tr><th>Mass</th><td>25% lighter after right-sizing</td></tr><tr><th>Deflection</th><td>Under 0.5 mm, SF above 2</td></tr><tr><th>Repeatability</th><td>Under 5 mm over 100+ runs</td></tr></table>
+      <a class="more" href="project-rebar.html">View project →</a>
+    </div>
+    <div class="panel">
+      <p class="label"><span class="dot"></span>CREAT UNO Minda · Pune · 2023 to 2024</p>
+      <h3><a href="project-enclosures.html">EV enclosures</a></h3>
+      <p class="summary">On-board charger and wireless charger housings designed for casting, molding, assembly and service.</p>
+      <table class="spec-table"><tr><th>Die-cast aluminum</th><td>15% lighter enclosure</td></tr><tr><th>PC/ABS housing</th><td>9% lighter, ≈ 2 t resin per 100K</td></tr><tr><th>Process</th><td>DFMEA, stack-ups, design reviews</td></tr><tr><th>Test rigs</th><td>RPAS rigs on 3 prototype vehicles</td></tr></table>
+      <a class="more" href="project-enclosures.html">View project →</a>
     </div>
   </div>
+</div></section>
 
-  <div class="feature">
-    <div class="feature-wide">
-      <p class="eyebrow">CREAT UNO Minda · Pune · 2023 to 2024</p>
-      <h3><a href="project-enclosures.html">EV enclosures for Tata Motors</a></h3>
-      <ul class="points"><li>Cut a die-cast aluminum charger enclosure's mass by 15% while protecting the sealing flange and mounts.</li><li>Cut a PC/ABS wireless charger housing's mass by 9% from the tooling supplier's DFM feedback.</li><li>Designed test rigs that standardized Reverse Park Assist testing across 3 prototype vehicles.</li></ul>
-      <a class="more" href="project-enclosures.html">Read more →</a>
-      <p class="note">These are company products, so I can't share photos.</p>
-    </div>
-  </div>
-</section>
-
-<section id="experience">
-  <h2>Experience</h2>
-  <div class="job"><div class="job-head"><h3>Mechanical Graduate Researcher</h3><span class="when">Aug 2024 to present</span></div><p class="meta">Autonomous Vehicles Lab, Texas A&amp;M University</p><ul class="points"><li>Lowered LiDAR temperature from 65°C to 57°C and mount weight 18% with a ventilated, fan-cooled mount design</li><li>Reduced lane-detection failures in vehicle testing by designing a vibration-isolated camera mount</li><li>Fabricated waterjet-cut sheet-metal mounts for four 96V hub-motor controllers and planned the harness routing</li><li>Measured steering angle at 0.35° resolution over 540° by designing and assembling a 4:1 gear-driven encoder assembly</li><li>Packaged the steering electronics into a frame-mounted enclosure with a removable cover for serviceability</li><li>Validated an 8-state MPC with zero collisions in CARLA obstacle tests, backed by an emergency-braking supervisor</li></ul></div>
-  <div class="job"><div class="job-head"><h3>Mechanical &amp; Robotics Engineering Intern</h3><span class="when">May 2025 to Aug 2025</span></div><p class="meta">Arn Autonomy (formerly Spacer Robotics) · San Francisco, CA</p><ul class="points"><li>Designed a 427 × 427 mm gantry chassis for a rebar-tying robot in SolidWorks, sized from the rebar grid spacing and tool loads, with 2020 aluminum extrusions, drivetrain mounts and a guide-rail-stabilized linear actuator</li><li>Trimmed robot mass 25% by right-sizing from 4045 to 2020 extrusions and doubling only the guide-rail members, keeping beam deflection under 0.5 mm and a safety factor above 2 under a 2× dynamic load</li><li>Simplified assembly to one fastener size and standard extrusion hardware, with gusset plates to resist frame racking</li><li>Created the BOM, built the prototype and validated sub-5 mm tool repeatability over 100+ runs by pairing 30 Hz visual servoing with a 200 Hz PID loop</li></ul></div>
-  <div class="job"><div class="job-head"><h3>Mechanical Engineer, EV Division</h3><span class="when">Jan 2023 to Mar 2024</span></div><p class="meta">CREAT UNO Minda · Pune, India</p><ul class="points"><li>Reduced a die-cast aluminum charger enclosure's mass by 15% for Tata EV platforms by thinning walls in CATIA V6 while protecting the sealing flange and mounting features through DFMEA and stack-up checks</li><li>Cut a PC/ABS wireless charger housing's mass by 9% (about 2 metric tons of resin per 100K units) by reworking wall thickness, ribs and draft from the tooling supplier's DFM feedback</li><li>Presented enclosure revisions in design reviews with CAE, tooling and quality teams, and updated the DFMEA with actions for the failure modes they raised</li><li>Standardized Reverse Park Assist System (RPAS) testing across 3 prototype vehicles by designing and fabricating vehicle-mounted rigs that held ultrasonic and ToF sensors at design-intent spacing and angles</li></ul></div>
-  <div class="job"><div class="job-head"><h3>Graduate Teaching Assistant, Advanced Control Systems</h3><span class="when">Aug 2024 to present</span></div><p class="meta">Texas A&amp;M University</p><ul class="points"><li>Built a dual-loop motor thermal controller and taught it with PID and FreeRTOS labs to 150+ students</li></ul></div>
-  <div class="job"><div class="job-head"><h3>Mechanical CAD Intern</h3><span class="when">May 2021 to Jul 2021</span></div><p class="meta">CADDESK · Bengaluru, India</p><ul class="points"><li>Modeled 3 assemblies from 50+ parts in Siemens NX by converting 2D drawings into parametric 3D models</li></ul></div>
-  <p class="meta" style="margin-top:14px"><b>Education:</b> M.S. Engineering Technology (Mechanical), Texas A&amp;M University, GPA 3.83, Dec 2026 ·
-  B.E. Automotive Engineering, Anna University, GPA 3.78</p>
-</section>
-
-<section id="projects">
-  <h2>More projects</h2>
-  <p class="section-intro">Analysis, controls and sensing projects from my coursework and thesis.</p>
+<section id="projects" class="alt"><div class="wrap">
+  <div class="sec-head"><div class="num">02 / PROJECTS</div><h2>Engineering projects</h2><p>Controls, analysis and robotics work from my thesis and coursework.</p></div>
   <div class="cards">
-    <article class="card"><a class="thumb" href="project-playground.html"><img src="img-pg-seesaw-fea.jpg" alt="Playground equipment and trailer hitch in ANSYS" loading="lazy"></a><h3><a href="project-playground.html">Playground equipment and trailer hitch in ANSYS</a></h3><p class="meta">ANSYS · SolidWorks</p><p>Four playground structures optimized to a factor of safety of 4 to 10, plus a trailer hitch checked with a mesh convergence study.</p><a class="more" href="project-playground.html">Read more →</a></article>
-    <article class="card"><a class="thumb" href="project-carla-mpc.html"><img src="img-carla-mpc.jpg" alt="Lane keeping and overtaking with MPC" loading="lazy"></a><h3><a href="project-carla-mpc.html">Lane keeping and overtaking with MPC</a></h3><p class="meta">Python · acados · CARLA</p><p>My thesis controllers: 6 overtakes on a 40 m obstacle course with zero collisions.</p><a class="more" href="project-carla-mpc.html">Read more →</a></article>
-    <article class="card"><h3><a href="project-nmpc-tv.html">Torque vectoring with nonlinear MPC</a></h3><p class="meta">MATLAB/Simulink</p><p>Four wheel torques chosen every 20 ms. About 60% less path-tracking error than an equal torque split in hard corners.</p><a class="more" href="project-nmpc-tv.html">Read more →</a></article>
-    <article class="card"><a class="thumb" href="project-imu.html"><img src="img-imu-methods.png" alt="IMU orientation with an adaptive filter" loading="lazy"></a><h3><a href="project-imu.html">IMU orientation with an adaptive filter</a></h3><p class="meta">MATLAB</p><p>Blended gyro and accelerometer, tracked gyro bias across temperature, and adapted the blend to motion.</p><a class="more" href="project-imu.html">Read more →</a></article>
-    <article class="card"><a class="thumb" href="project-obstacle-detect.html"><img src="img-obstacle-setup.jpg" alt="Obstacle localization with ultrasonic and ToF" loading="lazy"></a><h3><a href="project-obstacle-detect.html">Obstacle localization with ultrasonic and ToF</a></h3><p class="meta">Sensors · Embedded</p><p>Turning range readings from known sensor positions into obstacle coordinates.</p><a class="more" href="project-obstacle-detect.html">Read more →</a></article>
-    <article class="card"><h3><a href="project-dcpm.html">DC motor modeling, DOE and tolerance study</a></h3><p class="meta">MATLAB/Simulink</p><p>Motor model from first principles, then DOE and Monte Carlo to control output spread.</p><a class="more" href="project-dcpm.html">Read more →</a></article>
-    <article class="card"><h3><a href="project-biopsy-vibration.html">Biopsy robot needle vibration</a></h3><p class="meta">Statistics · Dynamics</p><p>Regression and ANOVA showed translational speed drives vibration most.</p><a class="more" href="project-biopsy-vibration.html">Read more →</a></article>
-    <article class="card"><a class="thumb" href="project-marl-lbf.html"><img src="img-marl-cooperation.png" alt="Multi-robot cooperation with RL" loading="lazy"></a><h3><a href="project-marl-lbf.html">Multi-robot cooperation with RL</a></h3><p class="meta">Python · MAPPO</p><p>How obstacles change cooperation between learning agents.</p><a class="more" href="project-marl-lbf.html">Read more →</a></article>
-    <article class="card"><h3><a href="project-ros-nav.html">ROS navigation and teleoperation</a></h3><p class="meta">ROS · Raspberry Pi</p><p>LiDAR mapping, RViz and goal-driven navigation on a small robot.</p><a class="more" href="project-ros-nav.html">Read more →</a></article>
+    <a class="card" href="project-carla-mpc.html"><div class="thumb fit"><img src="img-thesis-trajectory.jpg" alt="MPC for lane keeping and obstacle avoidance" loading="lazy"></div><div class="body"><p class="label">Thesis · acados · CARLA</p><h3>MPC for lane keeping and obstacle avoidance</h3><p>10 obstacles in 120 s with zero collisions and zero solver failures, plus SLAM and degraded-GPS testing.</p><span class="more">View project →</span></div></a>
+    <a class="card" href="project-nmpc-tv.html"><div class="thumb fit"><img src="img-tv-forces.jpg" alt="Torque vectoring with nonlinear MPC" loading="lazy"></div><div class="body"><p class="label">MATLAB · Simulink</p><h3>Torque vectoring with nonlinear MPC</h3><p>Four wheel torques chosen every 20 ms. Holds the path at 0.82 g where an equal torque split runs wide.</p><span class="more">View project →</span></div></a>
+    <a class="card" href="project-ros-nav.html"><div class="thumb"><img src="img-ros-nav.jpg" alt="ROS navigation and teleoperation" loading="lazy"></div><div class="body"><p class="label">ROS · Raspberry Pi · Published</p><h3>ROS navigation and teleoperation</h3><p>Remote driving, camera streaming, LiDAR mapping and goal navigation on a two-wheeled robot.</p><span class="more">View project →</span></div></a>
+    <a class="card" href="project-playground.html"><div class="thumb fit"><img src="img-pg-seesaw-fea.jpg" alt="Playground equipment and trailer hitch in ANSYS" loading="lazy"></div><div class="body"><p class="label">ANSYS · SolidWorks</p><h3>Playground equipment and trailer hitch in ANSYS</h3><p>Four structures brought to a factor of safety of 4 to 10, and a hitch checked with mesh convergence.</p><span class="more">View project →</span></div></a>
+    <a class="card" href="project-dcpm.html"><div class="thumb fit"><img src="img-dc-power-surface.jpg" alt="DC motor modeling, DOE and tolerance study" loading="lazy"></div><div class="body"><p class="label">Simulink · Minitab</p><h3>DC motor modeling, DOE and tolerance study</h3><p>First-principles motor model, DOE ranking, and a tolerance optimization that cut speed spread from 460 to 375 RPM.</p><span class="more">View project →</span></div></a>
+    <a class="card" href="project-imu.html"><div class="thumb fit"><img src="img-imu-methods.png" alt="IMU orientation with an adaptive filter" loading="lazy"></div><div class="body"><p class="label">MATLAB · Sensors</p><h3>IMU orientation with an adaptive filter</h3><p>Gyro and accelerometer blended, with gyro bias tracked across temperature and the blend adapted to motion.</p><span class="more">View project →</span></div></a>
+    <a class="card" href="project-obstacle-detect.html"><div class="thumb"><img src="img-obstacle-setup.jpg" alt="Obstacle localization with ultrasonic and ToF" loading="lazy"></div><div class="body"><p class="label">Sensors · Embedded</p><h3>Obstacle localization with ultrasonic and ToF</h3><p>Range readings from known sensor positions turned into obstacle coordinates.</p><span class="more">View project →</span></div></a>
+    <a class="card" href="project-marl-lbf.html"><div class="thumb fit"><img src="img-marl-cooperation.png" alt="Multi-robot cooperation with RL" loading="lazy"></div><div class="body"><p class="label">Python · MAPPO</p><h3>Multi-robot cooperation with RL</h3><p>How obstacles change cooperation between learning agents.</p><span class="more">View project →</span></div></a>
+    <a class="card" href="project-biopsy-vibration.html"><div class="body"><p class="label">Statistics · Dynamics</p><h3>Biopsy robot needle vibration</h3><p>Regression and ANOVA showed translational speed drives needle vibration most.</p><span class="more">View project →</span></div></a>
   </div>
-</section>
+</div></section>
 
-<section id="skills">
-  <h2>Skills</h2>
-  <div class="cards">
-    <div class="card"><h3>CAD and drawings</h3><div class="tags"><span>SolidWorks</span><span>Siemens NX</span><span>Creo</span><span>CATIA V6</span><span>GD&amp;T (ASME Y14.5)</span><span>Tolerance stack-ups</span></div></div>
-    <div class="card"><h3>Design and analysis</h3><div class="tags"><span>DFM / DFA</span><span>DFMEA</span><span>Design reviews</span><span>ANSYS FEA</span><span>Hand calculations</span><span>Material selection</span></div></div>
-    <div class="card"><h3>Manufacturing methods</h3><div class="tags"><span>Die casting</span><span>Injection molding</span><span>Sheet metal</span><span>Extrusion framing</span><span>Waterjet</span><span>3D printing</span></div></div>
-    <div class="card"><h3>Build and test</h3><div class="tags"><span>Fixtures and tooling</span><span>Assembly</span><span>BOM</span><span>Troubleshooting</span><span>Multimeter</span><span>Oscilloscope</span><span>Root cause analysis</span></div></div>
-    <div class="card"><h3>Robotics and programming</h3><div class="tags"><span>PID</span><span>MPC / NMPC</span><span>ROS 2</span><span>Gazebo</span><span>EKF</span><span>CAN</span><span>Teensy</span><span>Python</span><span>C/C++</span><span>MATLAB</span></div></div>
+<section id="experience"><div class="wrap">
+  <div class="sec-head"><div class="num">03 / EXPERIENCE</div><h2>Experience</h2></div>
+  <div class="job"><div class="when">Aug 2024 – Present</div><div><h3>Mechanical Graduate Researcher</h3><p class="org">Autonomous Vehicles Lab, Texas A&amp;M University · College Station, TX</p><ul class="points"><li>Lowered LiDAR temperature from 65°C to 57°C and mount weight 18% with a ventilated, fan-cooled mount design</li><li>Reduced lane-detection failures in vehicle testing by designing a vibration-isolated camera mount</li><li>Fabricated waterjet-cut sheet-metal mounts for four 96V hub-motor controllers and planned the harness routing</li><li>Measured steering angle at 0.35° resolution over 540° by designing and assembling a 4:1 gear-driven encoder assembly</li><li>Packaged the steering electronics into a frame-mounted enclosure with a removable cover for serviceability</li><li>Validated an 8-state MPC with zero collisions in CARLA obstacle tests, backed by an emergency-braking supervisor</li></ul></div></div>
+  <div class="job"><div class="when">May 2025 – Aug 2025</div><div><h3>Mechanical &amp; Robotics Engineering Intern</h3><p class="org">Arn Autonomy (formerly Spacer Robotics) · San Francisco, CA</p><ul class="points"><li>Designed a 427 × 427 mm gantry chassis for a rebar-tying robot in SolidWorks, sized from the rebar grid spacing and tool loads, with 2020 aluminum extrusions, drivetrain mounts and a guide-rail-stabilized linear actuator</li><li>Trimmed robot mass 25% by right-sizing from 4045 to 2020 extrusions and doubling only the guide-rail members, keeping beam deflection under 0.5 mm and a safety factor above 2 under a 2× dynamic load</li><li>Simplified assembly to one fastener size and standard extrusion hardware, with gusset plates to resist frame racking</li><li>Created the BOM, built the prototype and validated sub-5 mm tool repeatability over 100+ runs by pairing 30 Hz visual servoing with a 200 Hz PID loop</li></ul></div></div>
+  <div class="job"><div class="when">Jan 2023 – Mar 2024</div><div><h3>Mechanical Engineer, EV Division</h3><p class="org">CREAT UNO Minda · Pune, India</p><ul class="points"><li>Reduced a die-cast aluminum charger enclosure's mass by 15% by thinning walls in CATIA V6 while protecting the sealing flange and mounting features through DFMEA and stack-up checks</li><li>Cut a PC/ABS wireless charger housing's mass by 9% (about 2 metric tons of resin per 100K units) by reworking wall thickness, ribs and draft from the tooling supplier's DFM feedback</li><li>Presented enclosure revisions in design reviews with CAE, tooling and quality teams, and updated the DFMEA with actions for the failure modes they raised</li><li>Standardized Reverse Park Assist System (RPAS) testing across 3 prototype vehicles by designing and fabricating vehicle-mounted rigs that held ultrasonic and ToF sensors at design-intent spacing and angles</li></ul></div></div>
+  <div class="job"><div class="when">Aug 2024 – Present</div><div><h3>Graduate Teaching Assistant, Advanced Control Systems</h3><p class="org">Texas A&amp;M University · College Station, TX</p><ul class="points"><li>Built a dual-loop motor thermal controller and taught it with PID and FreeRTOS labs to 150+ students</li></ul></div></div>
+  <div class="job"><div class="when">May 2021 – Jul 2021</div><div><h3>Mechanical CAD Intern</h3><p class="org">CADDESK · Bengaluru, India</p><ul class="points"><li>Modeled 3 assemblies from 50+ parts in Siemens NX by converting 2D drawings into parametric 3D models</li></ul></div></div>
+  <div class="edu"><div class="when label">Education</div><div>
+    <p><b>M.S. Engineering Technology (Mechanical)</b>, Texas A&amp;M University · GPA 3.83 · Dec 2026</p>
+    <p><b>B.E. Automotive Engineering</b>, Anna University · GPA 3.78</p></div></div>
+</div></section>
+
+<section id="skills" class="alt"><div class="wrap">
+  <div class="sec-head"><div class="num">04 / SKILLS</div><h2>Tools and methods</h2></div>
+  <div class="skills">
+    <div class="skill"><h3>CAD &amp; drawings</h3><ul><li>SolidWorks</li><li>Siemens NX</li><li>Creo</li><li>CATIA V6</li><li>GD&amp;T (ASME Y14.5)</li><li>Tolerance stack-ups</li></ul></div>
+    <div class="skill"><h3>Design &amp; analysis</h3><ul><li>DFM / DFA</li><li>DFMEA</li><li>ANSYS FEA</li><li>Hand calculations</li><li>Material selection</li><li>Design reviews</li></ul></div>
+    <div class="skill"><h3>Manufacturing</h3><ul><li>Die casting</li><li>Injection molding</li><li>Sheet metal</li><li>Extrusion framing</li><li>Waterjet</li><li>3D printing</li></ul></div>
+    <div class="skill"><h3>Build &amp; test</h3><ul><li>Prototyping &amp; assembly</li><li>Fixtures and rigs</li><li>BOM</li><li>Oscilloscope, multimeter</li><li>Root cause analysis</li></ul></div>
+    <div class="skill"><h3>Robotics &amp; controls</h3><ul><li>PID, MPC / NMPC</li><li>ROS 2, Gazebo</li><li>EKF, sensor fusion</li><li>CAN, RS-485, Teensy</li><li>Python, C/C++, MATLAB</li></ul></div>
   </div>
-</section>
+</div></section>
 
-<section id="contact">
-  <h2>Contact</h2>
-  <p class="section-intro">I'm graduating in December 2026 and looking for full-time mechanical, robotics and hardware roles. I'm happy to relocate.</p>
+<div id="contact" class="dark grid-bg"><div class="wrap contact">
+  <p class="label"><span class="dot"></span>05 / Contact</p>
+  <h2>Open to full-time mechanical, robotics and hardware roles.</h2>
+  <p>Graduating December 2026 and happy to relocate.</p>
   <div class="btns"><a class="btn" href="mailto:jeffruf2001@gmail.com">jeffruf2001@gmail.com</a><a class="btn ghost" href="tel:+19793267595">(979) 326-7595</a>
-  <a class="btn ghost" href="https://www.linkedin.com/in/jeffryrwilliams/" target="_blank" rel="noreferrer">LinkedIn</a></div>
-</section>
+  <a class="btn ghost" href="https://www.linkedin.com/in/jeffryrwilliams/" target="_blank" rel="noreferrer">LinkedIn ↗</a></div>
+</div></div>
 </main>
-<footer><div class="wrap">Jeffry Rufus Robert Williams · College Station, TX · <a href="mailto:jeffruf2001@gmail.com">jeffruf2001@gmail.com</a></div></footer>
+<footer><div class="wrap"><span>Jeffry Rufus Robert Williams · College Station, TX</span>
+<span><a href="mailto:jeffruf2001@gmail.com">jeffruf2001@gmail.com</a> · <a href="https://www.linkedin.com/in/jeffryrwilliams/" target="_blank" rel="noreferrer">LinkedIn</a></span></div></footer>
+<div class="lb" id="lb"><img alt=""></div>
+<script>
+(function(){var lb=document.getElementById('lb'),im=lb.querySelector('img');
+document.querySelectorAll('.gallery .media img').forEach(function(i){i.addEventListener('click',function(){im.src=i.src;im.alt=i.alt;lb.classList.add('on')})});
+lb.addEventListener('click',function(){lb.classList.remove('on')});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')lb.classList.remove('on')});})();
+</script>
 </body>
 </html>

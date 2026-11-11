@@ -4,19 +4,26 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Multi-robot cooperation with reinforcement learning | Jeffry Rufus Robert Williams</title>
-<meta name="description" content="Agents in a level-based foraging game have to work together to collect items, with limited vision and obstacles in the way. I trained them with MAPPO ">
+<meta name="description" content="Agents in a level-based foraging game must work together to collect items, with limited vision and obstacles in the way. I trained them with MAPPO (central">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="top"><div class="wrap nav">
-  <a class="brand" href="index.html">Jeffry Rufus Robert Williams</a>
+  <a class="brand" href="index.html"><span class="mark">JRW</span>Jeffry Rufus Robert Williams</a>
   <nav class="nav-links">
-    <a href="index.html#work">Work</a><a href="index.html#experience">Experience</a>
-    <a href="index.html#projects">Projects</a><a href="index.html#skills">Skills</a><a href="index.html#contact">Contact</a>
+    <a href="index.html#work">Work</a><a href="index.html#projects">Projects</a>
+    <a href="index.html#experience">Experience</a><a href="index.html#skills">Skills</a><a href="index.html#contact">Contact</a>
   </nav>
 </div></header>
-<main class="wrap">
-<div class="page-head"><a class="back" href="index.html#work">← Back to all work</a><p class="eyebrow">Course project · MAPPO · Python</p><h1>Multi-robot cooperation with reinforcement learning</h1><p class="lead">Agents in a level-based foraging game have to work together to collect items, with limited vision and obstacles in the way. I trained them with MAPPO (centralized training, decentralized execution) and studied how obstacles change cooperation.</p><div class="links"><a class="btn ghost" href="https://drive.google.com/file/d/1Bh6G6x36ugG9yH5OMaOZrQYGxvXDqWIj/view?usp=sharing" target="_blank" rel="noreferrer">Report</a><a class="btn ghost" href="https://drive.google.com/drive/folders/1qs1Mj60zN42MU-1SyEoZ-Doh6GQ1DotX?usp=sharing" target="_blank" rel="noreferrer">Source code</a></div></div><div class="block"><h2>Result</h2><div class="gallery two"><figure><img src="img-marl-cooperation.png" alt="Cooperation metric at 0, 5 and 10 obstacles" loading="lazy"><figcaption>Cooperation metric at 0, 5 and 10 obstacles</figcaption></figure></div></div></main>
-<footer><div class="wrap">Jeffry Rufus Robert Williams · College Station, TX · <a href="mailto:jeffruf2001@gmail.com">jeffruf2001@gmail.com</a></div></footer>
+<div class="dark grid-bg"><div class="wrap page-hero"><a class="crumb" href="index.html#work">← All work</a><h1>Multi-robot cooperation with reinforcement learning</h1><div class="intro"><div><p class="label"><span class="dot"></span>Course project · MAPPO · Python</p><p class="lead" style="margin-top:14px">Agents in a level-based foraging game must work together to collect items, with limited vision and obstacles in the way. I trained them with MAPPO (centralized training, decentralized execution) and measured how obstacles change cooperation.</p><div class="btns"><a class="btn ghost" href="https://drive.google.com/file/d/1Bh6G6x36ugG9yH5OMaOZrQYGxvXDqWIj/view?usp=sharing" target="_blank" rel="noreferrer">Report ↗</a><a class="btn ghost" href="https://drive.google.com/drive/folders/1qs1Mj60zN42MU-1SyEoZ-Doh6GQ1DotX?usp=sharing" target="_blank" rel="noreferrer">Source code ↗</a></div></div><div><table class="spec-table"><tr><th>Type</th><td>Course project</td></tr><tr><th>Tools</th><td>Python, PyTorch</td></tr><tr><th>Method</th><td>MAPPO, centralized training</td></tr></table></div></div></div></div><main class="wrap"><div class="block"><div class="num">01</div><div class="text-col"><h2>Result</h2><div class="gallery two"><figure><div class="media"><img src="img-marl-cooperation.png" alt="Cooperation metric at 0, 5 and 10 obstacles" loading="lazy"></div><figcaption><b>Fig. 01</b>Cooperation metric at 0, 5 and 10 obstacles</figcaption></figure></div></div></div><div class="next"><a class="more" href="index.html#work">← Back to all work</a><a class="more" href="index.html#contact">Get in touch →</a></div></main><footer><div class="wrap"><span>Jeffry Rufus Robert Williams · College Station, TX</span>
+<span><a href="mailto:jeffruf2001@gmail.com">jeffruf2001@gmail.com</a> · <a href="https://www.linkedin.com/in/jeffryrwilliams/" target="_blank" rel="noreferrer">LinkedIn</a></span></div></footer>
+<div class="lb" id="lb"><img alt=""></div>
+<script>
+(function(){var lb=document.getElementById('lb'),im=lb.querySelector('img');
+document.querySelectorAll('.gallery .media img').forEach(function(i){i.addEventListener('click',function(){im.src=i.src;im.alt=i.alt;lb.classList.add('on')})});
+lb.addEventListener('click',function(){lb.classList.remove('on')});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')lb.classList.remove('on')});})();
+</script>
 </body>
 </html>
