@@ -240,3 +240,5 @@ figure{margin:0}
 .edu a{color:var(--maroon)}
 @media (max-width:960px){.orgs{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:640px){.orgs{grid-template-columns:1fr}.job-photos{grid-template-columns:1fr 1fr}}
+.org-tile .logo{display:flex;align-items:center;height:64px}
+.org-tile .logo img{max-height:56px;max-width:150px;width:auto;object-fit:contain}
